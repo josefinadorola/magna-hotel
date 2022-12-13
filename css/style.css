@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: #754628;
+    --black: #000;
+    --white: #fff;
+    --azul: #17466b;
+    --gray:#8a8787;
+  
+  }
+  
+
+section{
+    width: 100%;
+    padding: 5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+h2{
+    color: var(--brown);
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 0.8rem;
+
+}
+
+.divisor{
+background: var(--brown);
+height: 0.2rem;
+width: 300px;
+display: block;
+}
+
+/*Header y navbar*/
+.header{
+    width: 100%;
+    height: 160px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    border-bottom: 3px solid #754628;
+ 
+}
+
+.header__logo{
+    width: 280px;
+    height: 150px;
+}
+
+.navbar{
+    width: 50%;
+    padding-left: 40px;
+}
+
+.navbar__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navbar__list li a{
+    color: var(--brown);
+    transition: all 1s;
+}
+
+.navbar__list li:hover{
+  transform: scale(1.1);
+}
+
+.header__icons{
+    display: flex;
+    gap: 40px;
+   
+}
+
+.icons{
+    color: var(--brown);
+    font-size: 1.5rem;
+}
+
+/*Section Hero*/
+
+#hero{
+    background-image: url(../assets/img/section-hero.png);
+    height: 770px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.hero__titulos{
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.hero__titulos__h1{
+    font-size: 6rem;
+    font-weight: 300;
+    letter-spacing: 3rem;
+    color: var(--brown);
+}
+
+.hero__titulos__sub{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
+    color: #754628; 
+}
+
+/*Section Nosotros*/
+
+#nosotros{
+    height: 700px;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros_container{
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    gap: 6rem;
+}
+
+.nosotros__titulos{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.nosotros__titulos img{
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 2px #8a8787;
+}
+
+.nosotros__parrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.nosotros__parrafo p{
+    font-size: 1.3rem;
+    color: var(--black);
+    font-weight: 300;
+    line-height: 2.2rem;
+}
+
+.nosotros__parrafo span{
+    font-size: 2rem;
+    color: var(--brown);
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    
+}
+
+/*Section Hotel*/
+
+#hotel{
+    background-image: url(../assets/img/hotel.png);
+    height: 800px;
+    position: relative;
+
+}
+
+.hotel__container{
+    max-width: 1200px;
+   
+}
+
+.hotel__container h3{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.hotel__hab{
+    position: absolute;
+    width: 60%;
+    height: 500px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    bottom: 80px;
+    left: 100px;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column; 
+}
+
+.hotel__hab__cont{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.hotel__hab__cont__card{
+    width: 300px;
+    height: 300px;
+    background-color: var(--white);
+    border-bottom: 1rem solid #17466b;
+    border-radius: 0.5rem;
+    
+}
+
+.hotel__reservas{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    bottom: 80px;
+    right: 100px;
+    padding: 2rem;
+} 
+
+
+/*Footer*/
+
+/*CSS formulario y pÃƒÂ¡gina contacto*/
+#contacto{
+    height: 800px;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.contacto__container{
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+}
+
+#contacto h2{
+    padding: 5rem;
+}
+
+.contacto__container iframe{
+    width: 500px;
+    height: 370px;
+}
+
+.formulario {
+    max-width: 700px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid var(--brown);
+    background-color: transparent;
+    text-align: left;
+   
+  }
+  .formulario label {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .formulario input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 3px;
+    color: #8a8787;
+    font-size: 0.8rem;
+  }
+  .formulario button {
+    margin: 20px 0;
+    background-color: var(--brown);
+    color: var(--black);
+  }
+  .formulario .boton:hover {
+    color: var(--brown);
+    font-weight: bold;
+  }
+  .formulario textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 3px;
+    margin: 8px 0;
+    padding: 3px;
+    resize: none;
+    display: block;
+    color: var(--gray);
+    font-size: 0.8rem;
+  }
+
+
+
+  /*Fin CSS formulario*/
+  
+
+.footer{
+    background-image: url(../assets/img/footer-vector2.png);
+    width: 100%;
+    height: 500px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.flecha{
+    font-size: 3rem;
+    padding: 2rem;
+    color: var(--brown);
+}
+
+.footer__container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:center;
+    gap: 2rem;
+    color: var(--white);
+}
+
+.footer_container_dire{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.footer_container_tel a{
+    color:var(--white);
+}
+
+.footer__container__redes{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer__container__redes a{
+    color: var(--white);
+    font-size: 2rem;
+}
+
+

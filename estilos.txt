@@ -1,0 +1,15 @@
+Color principal: #ac9961
+font-family: lato,sans-serif;
+    background: #e7e7e7;
+
+
+.section-btn {
+    color: #fff;
+    font-size: 16px;
+    font-family: lato,sans-serif;
+    font-weight: 400;
+    background: #ac9961;
+    text-transform: uppercase;
+    height: 47px;
+    width: 262px;
+    line-height: 33px;

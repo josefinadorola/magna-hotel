@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/22c08125c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><img src="./assets/img/logo2.png" alt="logo" class="header__logo"
+      /></a>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#nosotros">NOSOTROS</a></li>
+          <li><a href="#gastronomia">RESTAURANTE</a></li>
+          <li><a href="#hotel">HOTEL</a></li>
+          <li><a href="#reservas">RESERVAS</a></li>
+        </ul>
+      </nav>
+      <div class="header__icons">
+        <a href="#contacto"><i class="fa-regular fa-envelope icons"></i></a>
+        <a href="#"><i class="fa-regular fa-user icons"></i></a>
+      </div>
+    </header>
+    <main class="main">
+      <section id="hero">
+        <div class="hero__titulos">
+          <h1 class="hero__titulos__h1">MAGNA</h1>
+          <p class="hero__titulos__sub">HOTEL&WINE</p>
+        </div>
+      </section>
+      <section id="nosotros">
+        <div class="nosotros_container">
+          <div class="nosotros__titulos">
+            <h2>NOSOTROS</h2>
+            <img src="./assets/img/nosotros.png" alt="nosotros" />
+          </div>
+          <div class="nosotros__parrafo">
+            <p>
+              <span>MAGNA</span> un lugar con historia y estilo, que vive al
+              ritmo de la naturaleza y exalta los sentidos. Recorran nuestra
+              huerta, disfruten de nuestra gastronomía, o solamente descansen,
+              cargándose de la energía de nuestra finca, la pureza de la
+              cordillera de los Andes y el sol Mendocino.
+            </p>
+            <p>
+              Crea momentos inolvidables en tierra o en el cielo. Rodeada de
+              montañas, viñedos, nuestra vibrante comunidad alberga notables
+              descubrimientos culturales y un sinfín de oportunidades para
+              conectarse y relajarse.
+            </p>
+            <span class="divisor"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="hotel">
+        <div class="hotel__container">
+          <h2>HOTEL BOUTIQUE</h2>
+          <div class="hotel__hab">
+            <h3>HABITACIONES</h3>
+            <div class="hotel__hab__cont">
+              <div class="hotel__hab__cont__card">Simple
+
+              </div>
+              <div class="hotel__hab__cont__card">Triple
+                
+              </div>
+              <div class="hotel__hab__cont__card">Twin
+
+              </div>
+            </div>
+          </div>
+          <div class="hotel__reservas">
+            <h3>RESERVAS</h3>
+            <form class="form-reservas"></form>
+          </div>
+        </div>
+      </section>
+      <section id="gastronomia">
+        <h2>WINE & FOOD</h2>
+        <div>
+          <div>Gastronomia</div>
+          <div>Resort</div>
+          <div>Eventos</div>
+        </div>
+      </section>
+      <section id="testimonios">
+        <h2>Testimonios</h2>
+        <div>
+          <div>Gastronomia</div>
+          <div>Resort</div>
+          <div>Eventos</div>
+        </div>
+      </section>
+      <section id="contacto">
+        <h2>CONTACTO</h2>
+        <div class="contacto__container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5627.031762241902!2d-68.90937628407266!3d-33.00764808922302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1670950688559!5m2!1ses!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <form class="formulario">
+            <label for="nombre">NOMBRE</label>
+            <input type="text" id="nombre" placeholder="María Gonzalez" />
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" placeholder="mgonzalez@gmail.com" />
+            <label for="mensaje">MENSAJE</label>
+            <textarea
+              name="mensaje"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu mensaje..."
+            ></textarea>
+            <button type="submit">ENVIAR</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="index.html"><i class="fa-solid fa-arrow-up flecha"></i></a>
+      <div class="footer__container">
+        <p class="footer_container_dire">
+          Guardia Vieja 2089, Luján de Cuyo, Mendoza.
+        </p>
+        <p class="footer_container_tel">
+          T: +54 9 0261 217-6097 |<a href="#contacto"> CONTACTO</a> |<a
+            href="#reservas"
+          >
+            RESERVAS
+          </a>
+        </p>
+        <div class="footer__container__redes">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
