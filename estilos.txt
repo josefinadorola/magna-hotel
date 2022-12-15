@@ -1,6 +1,8 @@
-Color principal: #ac9961
+Color principal: #ac9961  754628
 font-family: lato,sans-serif;
     background: #e7e7e7;
+
+azul #17466b
 
 
 .section-btn {

@@ -18,9 +18,16 @@
   }
   
 
-section{
+.section{
     width: 100%;
     padding: 5rem;
+ }
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+     gap: 2rem;
 }
 
 a{
@@ -45,11 +52,12 @@ display: block;
 
 .btn{
     background-color: var(--brown);
+    color: var(--white);
     cursor: pointer;
     padding: 8px 15px;
     font-size: 1rem;
     letter-spacing: 0.2rem;
-    border-radius: 0.5rem;  
+    border-radius: 0.2rem;  
     border: transparent; 
     width: 230px;
     height: 45px;
@@ -160,11 +168,7 @@ display: block;
 }
 
 .nosotros__container{
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 .nosotros__datos{
@@ -208,8 +212,6 @@ gap: 4rem;
 }
 
 .hotel__container{
-    max-width: 1200px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,8 +246,10 @@ gap: 4rem;
     display: flex;
     justify-content: space-around;
     padding: 1rem;
+    border-radius: 0.2rem;
 
 }
+
 
 .hotel__hab__cont__card{
     width: 350px;
@@ -257,6 +261,18 @@ gap: 4rem;
     
 }
 
+.hotel__hab__cont__card:nth-child(1){
+    background-image: url(../assets/img/simple.png);
+}
+
+.hotel__hab__cont__card:nth-child(2){
+    background-image: url(../assets/img/triple.png);
+}
+
+.hotel__hab__cont__card:nth-child(3){
+    background-image: url(../assets/img/Twin.png);
+}
+
 .hotel__hab__cont__card p{
     background-color: rgba(255, 255, 255, 0.7);
     height: 40px;
@@ -264,21 +280,10 @@ gap: 4rem;
     position: absolute;
     bottom: 0;
     text-align: center;
-    padding: 0.5rem;    
     letter-spacing: 0.8rem;
     border-radius: 0.5rem;
-}
+    padding: 0.5rem;
 
-.simple{
-    background-image: url(../assets/img/simple.png);
-}
-
-.triple{
-    background-image: url(../assets/img/triple.png);
-}
-
-.twin{
-    background-image: url(../assets/img/twin.png);
 }
 
 .hotel__reservas{
@@ -286,8 +291,35 @@ gap: 4rem;
     height: 200px;
     background-color: rgb(0, 0, 0, 0.7);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
 } 
+
+.form-reservas{
+display: flex;
+gap: 1rem;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+}
+
+.form-reservas input, select{
+    padding: 1rem;
+    border-radius: 0.2rem;
+    font-weight: 300;
+}
+
+.form-reservas label{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.form-reservas .btn{
+    width: 180px;
+    font-size: 0.8rem;
+}
 
 /*Section wine y food*/
 
@@ -350,33 +382,28 @@ gap: 4rem;
     display: flex;
     align-items: center;
     flex-direction: column;
-  background-image: url(../assets/img/contacto.jpg);
- background-size: cover;
  padding: 3rem;
+ background-image: url(../assets/img/mapa.png); 
+ background-repeat: no-repeat;
+ background-size: cover;
+
 }
 
+
 .contacto__container{
-    max-width: 1200px;
-    width: 100%;
     display: flex;
     gap: 3rem;
     flex-direction: column;
     align-items: center;
 
-}
 
-.contacto__container__form{
-  width: 100%;
- display: flex;
- align-items: center;
- gap: 5rem;
 }
-
+/* 
 .contacto__container__form iframe{
     width: 500px;
     height: 370px;
     border-radius: 0.2rem;
-}
+} */
 
 .formulario {
     max-width: 700px;
@@ -391,6 +418,7 @@ gap: 4rem;
     display: block;
     text-align: left;
     font-size: 1rem;
+    color: var(--brown);
   }
   .formulario input {
     width: 100%;
@@ -418,8 +446,7 @@ gap: 4rem;
     margin: 8px 0;
     padding: 3px;
     resize: none;
-      color: var(--gray);
-    font-size: 0.8rem;
+     font-size: 0.8rem;
     border: none;
   }
 
@@ -431,16 +458,13 @@ gap: 4rem;
 
 #premios{
   height: 200px;
-  padding: 4rem;
   display: flex;
-  justify-content: center;
+    justify-content: center;
 
 }
 
 .premios__container{
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
+    display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 6rem;
@@ -473,8 +497,6 @@ filter: grayscale();
 }
 
 .footer__container{
-    max-width: 1200px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
