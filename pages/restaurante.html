@@ -19,8 +19,8 @@
       <nav class="navbar">
         <ul class="navbar__list">
           <li><a href="../index.html">HOME</a></li>
-          <li><a href="#nosotros">NOSOTROS</a></li>
-          <li><a href="#food">RESTAURANTE</a></li>
+          <li><a href="../index.html/#nosotros">NOSOTROS</a></li>
+          <li><a href="../index.html/#food">RESTAURANTE</a></li>
           <li><a href="#hotel">HOTEL</a></li>
           <li><a href="#hotel">RESERVAS</a></li>
         </ul>
@@ -33,9 +33,9 @@
     
     <main class="main">
       <h1 class="h1-restaurante">
-        Nuestro Restaurante
+        NUESTRO RESTAURANTE
       </h1>
-      <section class="intro-resto">
+      <section class="intro-resto section">
         <div class="intro-resto__container">
         <div class="intro-resto__container__datos">
         <h2>COCINA <span>AUTÓCTONA</span></h2>
@@ -47,7 +47,7 @@
       </div>
       </section>
 
-      <section class="resto-reservas">
+      <section class="resto-reservas section">
         <div class="resto-reservas__container">
         <div class="resto-reservas__container__titulos">
         <p>Reservá</p>
@@ -56,13 +56,17 @@
        <form class="form-reservas">
         <input type="text" placeholder="Nombre completo">
         <input type="email" placeholder="Correo electrónico">
-        <input type="datetime-local" name="date" id="date">
+        <input type="date" name="date" id="date">
+        <input type="time" name="hora" id="hora">
+        <button class="btn btn-resto">CONSULTAR</button>
        </form>
+      
       </div>
       </section>
       
-      <section class="horarios">
+      <section class="horarios section">
         <h3>HORARIOS</h3>
+        <span class="divisor"></span>
         <div class="horarios__container">
         <ul>
           <li>Desde las 8 am hasta 12 am.</li>
@@ -76,6 +80,42 @@
       
         </ul>
       </div>
+      </section>
+      <section class="testimonios section">
+        <h3>TESTIMONIOS</h3>
+        <span class="divisor"></span>
+        <div class="testimonios__container">
+          <div class="testimonios__container__cards">
+            <div class="card-testimonio">
+            <p>Una cena fabulosa de principio a fin! Con los mejores vinos, la atención fue excelente, muy amables todos en el restaurante. El ambiente acogedor y agradable. .</p>
+            <img src="../assets/img/adriana.png" alt="Adriana">
+            </div>
+            <div class="card-name">
+            <p>ADRIANA</p>
+            <p>TRIP ADVISOR</p>
+          </div>
+          </div>
+          <div class="testimonios__container__cards">
+            <div class="card-testimonio">
+              <p >Tienen que conoces este hermoso lugar Arte combinado con platos deliciosos y excelentes vinos, imperdible. Atención en todo momento. Seguro volveré en cuanto tenga oportunidad.</p>
+              <img src="../assets/img/fabiana.png" alt="Fabiana">
+            </div>
+            <div class="card-name">
+              <p>FABIANA</p>
+            <p>GOOGLE</p>
+            </div>
+          </div>
+          <div class="testimonios__container__cards">
+            <div class="card-testimonio">
+            <p>Fuimos a cenar, La verdad que fue todo perfecto, la cena, el maridaje, los vinos, la atención por sobre todo, todo perfectamente calculado. Muchísimas gracias, volveremos.</p>
+            <img src="../assets/img/lucas.png" alt="Lucas">
+            </div>
+            <div class="card-name">
+            <p>LUCAS</p>
+            <p>BOOKING</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
