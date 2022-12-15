@@ -31,14 +31,14 @@
       </div>
     </header>
     <main class="main">
-      <section id="hero">
+      <section id="hero" class="section">
         <div class="hero__titulos">
           <h1 class="hero__titulos__h1">MAGNA</h1>
           <p class="hero__titulos__sub">HOTEL&WINE</p>
         </div>
       </section>
-      <section id="nosotros">
-        <div class="nosotros__container">
+      <section id="nosotros" class="section">
+        <div class="container nosotros__container">
             <h2>NOSOTROS</h2> 
           <div class="nosotros__datos">
             <img src="./assets/img/nosotros.webp" alt="nosotros" />
@@ -61,34 +61,51 @@
         </div>
       </section>
 
-      <section id="hotel">
-        <div class="hotel__container">
+      <section id="hotel" class="section">
+        <div class="container  hotel__container">
           <h2>HOTEL BOUTIQUE</h2>
           <div class="hotel__hab">
             <h3>HABITACIONES</h3>
             <div class="hotel__hab__cont">
-              <div class="hotel__hab__cont__card simple">
+              <div class="hotel__hab__cont__card">
                <p>SIMPLE</p> 
 
               </div>
-              <div class="hotel__hab__cont__card triple">
+              <div class="hotel__hab__cont__card">
                 <p>TRIPLE</p> 
                 
               </div>
-              <div class="hotel__hab__cont__card twin">
+              <div class="hotel__hab__cont__card">
                 <p>TWIN</p> 
               </div>
             </div>
           </div>
           <div class="hotel__reservas">
             <h3>RESERVAS</h3>
-            <form class="form-reservas"></form>
+            <form class="form-reservas">
+              <label for="ingreso">Ingreso</label>
+              <input type="date" name="ingreso" id="ingreso">
+              <label for="ingreso">Salida</label>
+              <input type="date" name="salida" id="salida">
+              <label for="habitacion">Habitación</label>
+              <select name="personas" id="personas">
+                <option value="1">Simple</option>
+                <option value="2">Twin</option>
+                <option value="3">Triple</option>
+              </select>
+              <button type="submit" class="btn">CONSULTAR</button>
+            </form>
           </div>
         </div>
       </section>
+<<<<<<< HEAD
       <!--Sección gastronomia-->
       <section id="food">
         <div class="food__container">
+=======
+      <section id="food" class="section">
+        <div class="container food__container">
+>>>>>>> 54ec0f12e6e499ff90203d0cdd7135e958bec65c
         <h2>WINE & FOOD</h2>
         <div class="food__container__datos">
           <div class="food__container__datos__p">
@@ -104,11 +121,11 @@
         </div>
       </div>
       </section>
-      <section id="contacto">
-        <div class="contacto__container">
+      <section id="contacto" class="section">
+        <div class="container  contacto__container">
           <h2>CONTACTO</h2>
-          <div class="contacto__container__form">
-          <iframe
+        
+          <!-- <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5627.031762241902!2d-68.90937628407266!3d-33.00764808922302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1670950688559!5m2!1ses!2sar"
             width="600"
             height="450"
@@ -116,7 +133,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          ></iframe> -->
 
           <form class="formulario">
             <label for="nombre">NOMBRE</label>
@@ -133,11 +150,11 @@
             ></textarea>
             <button type="submit" class="btn">ENVIAR</button>
           </form>
-        </div>
+ 
         </div>
       </section>
-      <section id="premios">
-        <div class="premios__container">
+      <section id="premios" class="section">
+        <div class="container  premios__container">
 <img src="./assets/img/kayak.webp" alt="award1">
 <img src="./assets/img/trip.jpg" alt="award2">
 <img src="./assets/img/trav.png" alt="award3">
