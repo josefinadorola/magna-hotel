@@ -43,6 +43,15 @@ h2{
 
 }
 
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.8rem;
+    display: flex;
+    justify-content: center;
+    color: var(--brown);
+}
+
 p{
   font-size: 1.3rem;
   color: var(--black);
@@ -81,6 +90,19 @@ display: block;
   align-items: center;
 }
 
+.h1-pages{
+    width: 100%;
+    height: 500px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 5rem;
+    text-shadow: 1px 2px var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
 
 /*Header y navbar*/
 .header{
@@ -108,7 +130,8 @@ display: block;
 .navbar__list{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5rem;
 
 }
 
@@ -213,9 +236,11 @@ gap: 4rem;
 
 #hotel{
     background-image: url(../assets/img/hotel.webp);
-    height: 800px;
+    height: 750px;
     display: flex;
     justify-content: center;
+
+   
 }
 
 .hotel__container{
@@ -227,23 +252,21 @@ gap: 4rem;
 }
 
 .hotel__container h3{
-    padding: 1rem;
-    font-size: 1.5rem;
     color: var(--white);
-    font-weight: 300;
-    letter-spacing: 0.8rem;
-    display: flex;
-    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    
 }
 
 .hotel__hab{
     width: 100%;
-    height: 500px;
+    height: 450px;
     background-color: rgb(0, 0, 0, 0.8);
     border-radius: 1rem;
     display: flex;
     gap: 1rem;
     flex-direction: column; 
+    align-items: center;
     padding: 1rem;
  }
 
@@ -251,7 +274,7 @@ gap: 4rem;
 
 .hotel__hab__cont{
     display: flex;
-    justify-content: space-around;
+    gap: 2rem;
     padding: 1rem;
     border-radius: 0.2rem;
 
@@ -289,44 +312,11 @@ gap: 4rem;
     text-align: center;
     letter-spacing: 0.8rem;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.2rem;
 
 }
 
-.hotel__reservas{
-    width: 80%;
-    height: 200px;
-    background-color: rgb(0, 0, 0, 0.7);
-    border-radius: 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-} 
 
-.form-reservas{
-display: flex;
-gap: 1rem;
-align-items: center;
-justify-content: center;
-padding: 1rem;
-}
-
-.form-reservas input, select{
-    padding: 1rem;
-    border-radius: 0.2rem;
-    font-weight: 300;
-}
-
-.form-reservas label{
-    color: var(--white);
-    font-weight: 300;
-    font-size: 0.8rem;
-}
-
-.form-reservas .btn{
-    width: 180px;
-    font-size: 0.8rem;
-}
 
 /*Section wine y food*/
 
@@ -374,6 +364,10 @@ gap: 4rem;
   font-size: 2rem;
     color: var(--brown);
     font-weight: 400;
+    justify-content: left;
+    flex-direction: column;
+    gap: 0.5rem;
+    letter-spacing: 0.6rem;
   
 }
 
@@ -385,62 +379,72 @@ gap: 4rem;
     align-items: center;
     flex-direction: column;
  padding: 3rem;
- background-image: url(../assets/img/mapa.png); 
- background-repeat: no-repeat;
- background-size: cover;
+ background-color: var(--crema);
+
 
 }
 
 
 .contacto__container{
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     flex-direction: column;
-    align-items: center;
+  
 
 
 }
-/* 
-.contacto__container__form iframe{
-    width: 500px;
-    height: 370px;
-    border-radius: 0.2rem;
-} */
+
 
 .formulario {
-    max-width: 700px;
     width: 95%;
-    padding: 2rem;
-    background-color: rgb(255, 255, 255, 0.7);
     text-align: left;
+    padding: 1rem 0;
     border-radius: 0.2rem;
-   
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+     
   }
+
+  .form-container{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .form-container span{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+
+ 
   .formulario label {
-    display: block;
     text-align: left;
     font-size: 1rem;
+    padding: 0.5rem 0;
     color: var(--brown);
   }
   .formulario input {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-    border-radius: 0.2rem;
+    padding: 1rem;
+     border-radius: 0.2rem;
     font-size: 0.8rem;
-    border: none;
-  }
+    border: 1px solid var(--gray);
+    width: 1fr;
+   }
 
   .formulario .btn{
    color: var(--white);
    border-radius: 0.2rem;
-  
+     
   }
  
   .formulario .btn:hover {
     font-weight: bold;
     border: 2px solid var(--black);
   }
+
   .formulario textarea {
     width: 100%;
     height: 100px;
@@ -449,7 +453,7 @@ gap: 4rem;
     padding: 3px;
     resize: none;
      font-size: 0.8rem;
-    border: none;
+     border: 1px solid var(--gray);
   }
 
 
@@ -544,16 +548,6 @@ filter: grayscale();
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
-  width: 100%;
-  height: 500px;
-  color: var(--white);
-  font-weight: 400;
-  font-size: 5rem;
-  text-shadow: 1px 2px var(--black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
 }
 
 .intro-resto{
@@ -576,6 +570,7 @@ justify-content: center;
   gap: 2rem;
   padding: 3rem;
   width: 800px;
+  
 }
 
 .intro-resto__container__datos h2{
@@ -618,16 +613,21 @@ gap: 1rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  color: var(--azul);
-  letter-spacing: 0.5rem;
-  padding: 1rem;
-  font-size: 1.5rem;
+
 }
+
+.resto-reservas__container__titulos h3{
+    color: var(--azul);
+    letter-spacing: 0.5rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
 
 
 .resto-reservas__container__titulos p{
     color: var(--azul);
     font-weight: 400;
+    padding: 0 1rem;
 }
 
 .form-reservas{
@@ -637,8 +637,10 @@ gap: 1rem;
 
 .form-reservas input{
  width: 260px;
- padding: 0.5rem;
+ padding: 1rem;
  border: none;
+ border-radius: 0.2rem;
+ font-size: 0.8rem;
 }
 
 .form-reservas input:nth-child(3){
@@ -652,7 +654,8 @@ gap: 1rem;
 
 .btn-resto{
     background-color: #17466b;
-    width: 120px;
+    width: 160px;
+
 }
 
 
@@ -855,3 +858,236 @@ gap: 1rem;
     grid-row: 4/5;
     background: url(../assets/img/restaurante/3.jpg) no-repeat center/cover;
 } 
+
+
+/*-----------------------------------*/
+
+/*PÁGINA HABITACIONES*/
+
+.h1-hotel{
+    background-image: url(../assets/img/hotel/room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  
+  }
+  
+  .intro-hotel{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .intro-hotel__container{
+        gap: 1rem;
+    align-items: center;
+    background-image: url(../assets/img/fondo-crema.png);
+  }
+  
+  .intro-hotel__container__datos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem 3rem 3rem;
+    width: 800px;
+  }
+  
+  .intro-hotel__container__datos h2{
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--azul);
+  }
+
+  .divisor-hotel, .btn-reserva{
+    background-color: var(--azul);
+  }
+  
+  
+  .intro-hotel__container img{
+    width: 700px;
+    height: 400px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 2px #8a8787;
+  }
+
+  /*Habitaciones*/
+
+  .habitaciones-hotel{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.habitaciones-hotel h3{
+    font-size: 2rem;
+    color: var(--azul);
+}
+
+.habitaciones-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 2px #8a8787;
+    padding: 1rem;
+}
+
+.habitaciones{
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+
+}
+
+.habitaciones-img{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 1rem;
+}
+
+.habitaciones-img img{
+    width: 400px;
+    height: 250px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 2px #8a8787;
+}
+
+.habitaciones__descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.habitaciones__descripcion__titulos h4{
+    color: var(--azul);
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;    
+}
+
+.habitaciones__descripcion__titulos p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.habitaciones__descripcion__datos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.habitaciones__descripcion__datos p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--gray);
+
+}
+
+.habitaciones__descripcion__datos ul{
+    padding: 1rem;
+}
+
+.habitaciones__descripcion__datos ul li{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--gray);
+    padding: 0.5rem;
+
+}
+
+
+
+
+/*Hotel reservas*/
+
+.hotel-reservas{
+    display: flex;
+    justify-content: center;
+    background-color: var(--azul);
+}
+
+
+.hotel-reservas__container{
+    height: 200px;
+    border-radius: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+} 
+
+.hotel-reservas__container h3{
+    color: var(--white);
+}
+
+.form-reservas{
+width: 95%;
+display: flex;
+gap: 1rem;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+}
+
+.form-reservas-room input:nth-child(2),
+.form-reservas-room input:nth-child(4), 
+.form-reservas-room select{
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    font-weight: 300;
+    border: none;
+    margin: 1rem;
+}
+
+.form-reservas-room label{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 0.8rem;
+
+}
+
+.form-reservas-room .btn{
+    width: 180px;
+    font-size: 0.8rem;
+}
+
+/*Hotel servicios*/
+
+.servicios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23d1d1d1' fill-opacity='0.4' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+  }
+  
+  .servicios h3, .testimonios .h3-hotel-test{
+    color: var(--azul);
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+  
+  .servicios__container{
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+  }
+  
+  
+  
+  .servicios__container ul li{
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 0.8rem;
+  
+  }
+
+ 

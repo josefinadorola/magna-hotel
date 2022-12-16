@@ -8,8 +8,9 @@
       src="https://kit.fontawesome.com/22c08125c6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="./assets/img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Magna-Hotel&Wine</title>
   </head>
   <body>
     <header class="header">
@@ -68,7 +69,7 @@
             <h3>HABITACIONES</h3>
             <div class="hotel__hab__cont">
               <div class="hotel__hab__cont__card">
-               <p>SIMPLE</p> 
+               <p>SUITE</p> 
 
               </div>
               <div class="hotel__hab__cont__card">
@@ -79,23 +80,9 @@
                 <p>TWIN</p> 
               </div>
             </div>
+            <button type="submit" class="btn"><a href="./pages/habitaciones.html">VER MÁS</a></button>
           </div>
-          <div class="hotel__reservas">
-            <h3>RESERVAS</h3>
-            <form class="form-reservas">
-              <label for="ingreso">Ingreso</label>
-              <input type="date" name="ingreso" id="ingreso">
-              <label for="ingreso">Salida</label>
-              <input type="date" name="salida" id="salida">
-              <label for="habitacion">Habitación</label>
-              <select name="personas" id="personas">
-                <option value="1">Simple</option>
-                <option value="2">Twin</option>
-                <option value="3">Triple</option>
-              </select>
-              <button type="submit" class="btn">CONSULTAR</button>
-            </form>
-          </div>
+    
         </div>
       </section>
       <!--Sección gastronomia-->
@@ -104,7 +91,9 @@
         <h2>WINE & FOOD</h2>
         <div class="food__container__datos">
           <div class="food__container__datos__p">
-            <h3>Nuestro Restaurante</h3>
+            <h3>NUESTRO <span>RESTAURANTE
+            </span>
+            </h3>
             <span class="divisor"></span>
          <p>Una cocina basada en el uso de materias primas orgánicas, mixtura de técnicas e ingredientes de estación, armonizada con nuestros vinos y espumantes. Ganador del premio Mejor Restaurante de bodega del Mundo 2020.</p>
          <button class="btn">
@@ -122,20 +111,41 @@
         
 
           <form class="formulario">
+            <div class="form-container">
+              <span>
             <label for="nombre">NOMBRE</label>
-            <input type="text" id="nombre" placeholder="María Gonzalez" />
+            <input type="text" id="nombre" />
+          </span>
+          <span>
+            <label for="nombre">APELLIDO</label>
+            <input type="text" id="nombre" />
+          </span>
+          <span>
             <label for="email">EMAIL</label>
-            <input type="email" id="email" placeholder="mgonzalez@gmail.com" />
+            <input type="email" id="email" />
+          </span>
+            </div>
+          <div class="form-container">
+            <span>
+            <label for="nombre">PAÍS DE RESIDENCIA</label>
+            <input type="text" id="pais" />
+          </span>
+           <span>
+            <label for="nombre">ASUNTO DE CONSULTA</label>
+            <input type="text" id="nombre" />
+          </span>
+        </div>
+          <div>
             <label for="mensaje">MENSAJE</label>
             <textarea
               name="mensaje"
               id=""
               cols="30"
-              rows="10"
-              placeholder="Tu mensaje..."
-            ></textarea>
-            <button type="submit" class="btn">ENVIAR</button>
+              rows="10"  ></textarea>
+            </div>
+
           </form>
+          <button type="submit" class="btn">ENVIAR</button>
  
         </div>
       </section>
