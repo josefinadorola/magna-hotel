@@ -330,11 +330,7 @@ gap: 4rem;
 
 
  .food__container{
-  max-width: 1200px;
-  width: 80%;
-  display: flex;
   flex-direction: column;
-  gap: 3rem;
 }
 
 .food__container h2{
@@ -386,9 +382,9 @@ gap: 4rem;
 
 
 .contacto__container{
-    display: flex;
     gap: 1rem;
     flex-direction: column;
+    align-items: center;
   
 
 
@@ -544,7 +540,7 @@ filter: grayscale();
 /*Section intro*/
 
 .h1-restaurante{
-  background-image: url(../assets/img/Restaurante/5.jpg);
+  background-image: url(../assets/img/Restaurante/8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;

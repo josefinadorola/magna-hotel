@@ -1,0 +1,39 @@
+@media only screen and (max-device-width: 1300px){
+
+  /*Index*/
+
+  #nosotros{
+    height: 500px;
+  }
+
+  p{
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+
+  h2{
+    font-size: 3rem;
+    letter-spacing: 0.8rem;
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
+
+
+  .container{
+    width: 80%;
+  
+  }
+
+  .nosotros__datos img, .food__container__datos img{
+    width: 380px;
+    height: 280px;
+
+  }
+
+ #food{
+    height: 550px;
+  }
+
+}
