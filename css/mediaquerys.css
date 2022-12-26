@@ -2,13 +2,14 @@
 
   /*Index*/
 
-  #nosotros{
+  #nosotros,  #food{
     height: 500px;
+    padding: 1rem 0.5rem;
   }
 
   p{
     font-size: 0.9rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   h2{
@@ -22,7 +23,7 @@
 
 
   .container{
-    width: 80%;
+    padding: 2rem;
   
   }
 
@@ -32,8 +33,59 @@
 
   }
 
- #food{
+  #hotel, #contacto{
+    padding: 0;
     height: 550px;
   }
+
+  .premios__container img{
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+
+@media only screen and (max-device-width: 992px){
+
+  .nosotros__datos{
+    gap:2rem;
+  }
+  .nosotros__datos__parrafo{
+    gap: 0.8rem;
+  }
+
+  .nosotros__datos__parrafo span{
+    font-size: 1.2rem;
+       
+}
+  
+  h2{
+    font-size: 2.5rem;
+    letter-spacing: 0.6rem;
+  }
+
+  .food__container__datos{
+    gap: 2rem;
+    }
+
+.food__container__datos__p h3{
+      font-size: 1.2rem;
+  }
+
+  
+  .nosotros__datos img, .food__container__datos img{
+    width: 340px;
+    height: 240px;
+
+  }
+
+}
+
+@media only screen and (max-device-width: 768px){
+
+.nosotros__datos{
+  overflow: hidden;
+}
 
 }

@@ -146,7 +146,7 @@ display: block;
 
 .header__icons{
     display: flex;
-    gap: 40px;
+    gap: 1rem;
    
 }
 
@@ -196,7 +196,6 @@ display: block;
 /*Section Nosotros*/
 
 #nosotros{
-    height: 650px;
     padding: 4rem;
     display: flex;
     justify-content: center;
@@ -205,6 +204,7 @@ display: block;
 
 .nosotros__container{
     flex-direction: column;
+    justify-content: center;
 }
 
 .nosotros__datos{
@@ -236,7 +236,6 @@ gap: 4rem;
 
 #hotel{
     background-image: url(../assets/img/hotel.webp);
-    height: 750px;
     display: flex;
     justify-content: center;
 
@@ -244,9 +243,11 @@ gap: 4rem;
 }
 
 .hotel__container{
+  width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
    
 }
@@ -260,21 +261,23 @@ gap: 4rem;
 
 .hotel__hab{
     width: 100%;
-    height: 450px;
     background-color: rgb(0, 0, 0, 0.8);
     border-radius: 1rem;
     display: flex;
     gap: 1rem;
     flex-direction: column; 
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0 2rem;
  }
 
 
 
 .hotel__hab__cont{
+  width: 100%;
     display: flex;
+    justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
     padding: 1rem;
     border-radius: 0.2rem;
 
@@ -282,7 +285,7 @@ gap: 4rem;
 
 
 .hotel__hab__cont__card{
-    width: 350px;
+    width: 30%;
     height: 200px;
     background-color: var(--white);
     border-radius: 0.5rem;
@@ -321,7 +324,6 @@ gap: 4rem;
 /*Section wine y food*/
 
 #food{
-  height: 700px;
   padding: 4rem;
   display: flex;
   justify-content: center;
@@ -331,6 +333,7 @@ gap: 4rem;
 
  .food__container{
   flex-direction: column;
+  justify-content: center;
 }
 
 .food__container h2{
@@ -370,7 +373,6 @@ gap: 4rem;
 
 /*Contacto*/
 #contacto{
-    height: 650px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -459,9 +461,10 @@ gap: 4rem;
 /*Section premios*/
 
 #premios{
-  height: 200px;
   display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
 
 }
 
@@ -469,7 +472,7 @@ gap: 4rem;
     display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 6rem;
+
 }
 
 .premios__container img{
@@ -484,8 +487,7 @@ filter: grayscale();
 .footer{
     background-image: url(../assets/img/footer-vector2.png);
     width: 100%;
-    height: 500px;
-    padding: 3rem;
+    padding: 8rem 0 1.5rem;
     display: flex;
     justify-content: center;
 }
@@ -503,12 +505,12 @@ filter: grayscale();
     flex-direction: column;
     justify-content: flex-end;
     align-items:center;
-    gap: 1.5rem;
+    gap: 1.2rem;
     color: var(--white);
 }
 
 .footer_container_dire{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
