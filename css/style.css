@@ -62,7 +62,7 @@ p{
 .divisor{
 background: var(--brown);
 height: 0.2rem;
-width: 150px;
+width: 8rem;
 display: block;
 }
 
@@ -159,6 +159,7 @@ display: block;
 
 #hero{
     background-image: url(../assets/img/section-hero.webp);
+    background-position: bottom;
     height: 770px;
     display: flex;
     align-items: center;

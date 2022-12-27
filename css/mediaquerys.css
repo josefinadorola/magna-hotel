@@ -84,8 +84,66 @@
 
 @media only screen and (max-device-width: 768px){
 
-.nosotros__datos{
-  overflow: hidden;
+  #hero{
+    height: 600px;
+  }
+
+  .hero__titulos__h1{
+    font-size: 4rem;
+    letter-spacing: 2rem;
 }
+
+.hero__titulos__sub{
+  font-size: 1rem;
+  letter-spacing: 0.8rem;
+
+}
+
+.overflow{
+  display: none;
+}
+
+.nosotros__datos img, .food__container__datos img{
+  width: 280px;
+  height: 180px;
+
+}
+ 
+  .hotel__hab__cont{
+  gap: 1rem;
+  padding: 0.5rem;
+  }
+
+  .food__container__datos__p{
+    gap: 0.8rem;
+    }
+
+    .food__container__datos__p h3{
+      font-size: 1rem;
+      letter-spacing: 0.4rem;
+  }
+
+    .food__container__datos__p .btn{
+      width: 200px;
+    font-size: 0.8rem;
+      }
+
+
+}
+
+@media only screen and (max-device-width: 576px){
+  .nosotros__datos img, .food__container__datos img{
+    display: none;
+  
+  }
+
+  #hotel, #contacto{
+    padding: 2rem;
+    height: 300px;
+    }
+
+    #hotel{
+      background-image: none;
+    }
 
 }
