@@ -543,7 +543,7 @@ filter: grayscale();
 /*Section intro*/
 
 .h1-restaurante{
-  background-image: url(../assets/img/Restaurante/8.jpg);
+  background-image: url(../assets/img/restaurante/8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
