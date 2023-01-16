@@ -132,18 +132,101 @@
 }
 
 @media only screen and (max-device-width: 576px){
+
+  /*Section Hero*/
+
+#hero{
+  background-image: url(../assets/img/section-hero-mq.png);
+  height: 500px;
+}
+
+.hero__titulos__h1{
+  font-size: 3rem;
+  letter-spacing: 2rem;
+
+}
+
+.hero__titulos__sub{
+  font-size: 1rem;
+  letter-spacing: 0.8rem;
+
+}
+
+/*Section Nosotros*/
+
   .nosotros__datos img, .food__container__datos img{
     display: none;
-  
   }
 
-  #hotel, #contacto{
-    padding: 2rem;
+  .container h2{
+    justify-content: left;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .nosotros__container, .hotel__container, .food__container{
+    justify-content: start;
+    padding: 1rem 2rem;
+  }
+
+  #nosotros{
     height: 300px;
-    }
+  }
+
+  #food{
+    height: 430px;
+  }
 
     #hotel{
       background-image: none;
+      height: 1000px;
     }
+
+   #contacto{
+      height: 750px;
+    }
+
+    #hotel h3{
+     font-size: 1.5rem;
+     letter-spacing: 0.5rem;
+    }
+
+    .hotel__hab__cont{
+   flex-direction: column;
+   padding: 1rem;
+    }
+
+    .hotel__hab__cont__card{
+      width: 100%;
+     
+  }
+
+  .form-container{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .formulario input {
+    padding: 0.5rem;
+   }
+
+   
+.premios__container{
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+   .premios__container img{
+    width: 90px;
+    height: 90px;
+    }
+
+    .footer_container_dire{
+      font-size: 1rem;
+  }
+  
+  .footer_container_tel{
+    font-size: 0.8rem;
+  }
 
 }
