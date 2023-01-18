@@ -112,8 +112,11 @@ display: block;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px 10px;
+    padding: 50px;
     border-bottom: 3px solid var(--brown);
+    position: fixed;
+    top: 0;
+    z-index: 1;
  
 }
 
@@ -122,22 +125,24 @@ display: block;
     height: 100px;
 }
 
-.navbar{
-    width: 50%;
-    padding-left: 40px;
-}
 
+.navbar, 
 .navbar__list{
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
 
 }
 
-.navbar__list li a{
+.navbar__list a{
     color: var(--brown);
-    transition: all 1s;
+    transition: transform 1s;
+}
+
+.navbar__list li{
+  transition: transform 1s;
 }
 
 .navbar__list li:hover{
@@ -155,6 +160,15 @@ display: block;
     font-size: 1.5rem;
 }
 
+.toggle-label i{
+  font-size: 2.2rem;
+  display: none;
+}
+
+#toggle-menu{
+  display: none;
+}
+
 /*Section Hero*/
 
 #hero{
@@ -162,7 +176,10 @@ display: block;
     background-position: bottom;
     height: 770px;
     border-bottom: 3px solid var(--brown);
-    /*box-shadow: 0px 15px 10px -15px #8a8787;*/
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
   
 }
 
@@ -180,7 +197,6 @@ display: block;
     font-weight: 300;
     letter-spacing: 3rem;
     color: var(--brown);
- 
  }
 
 .hero__titulos__sub{
