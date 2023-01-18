@@ -163,6 +163,8 @@ display: block;
 .toggle-label i{
   font-size: 2.2rem;
   display: none;
+  color: var(--brown);
+  font-size: 1.5rem;
 }
 
 #toggle-menu{
@@ -189,17 +191,18 @@ display: block;
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
+
 }
 
 
-.hero__titulos__h1{
+.hero__titulos h1{
     font-size: 6rem;
     font-weight: 300;
     letter-spacing: 3rem;
     color: var(--brown);
  }
 
-.hero__titulos__sub{
+.hero__titulos p{
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1rem;
