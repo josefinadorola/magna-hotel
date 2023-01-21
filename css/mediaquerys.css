@@ -83,6 +83,18 @@ right: 100px;
     height: 150px;
   }
 
+  /*PÁGINA RESTAURANTE*/
+
+  .intro-resto__container img{
+    width: 500px;
+    height: 320px;
+  }
+
+  .grid-container{
+    grid-template-columns: 250px 200px 100px 250px;
+  
+}
+
 }
 
 
@@ -120,6 +132,33 @@ right: 100px;
 
   }
 
+       /*paginas*/
+
+       .h1-pages{
+        height: 300px;
+
+      }
+
+
+      /*PÁGINA RESTAURANTE*/
+
+      .intro-resto__container{
+padding: 2rem;
+      }
+
+  .intro-resto__container img{
+    display: none;
+  }
+ 
+    .grid-container{
+      grid-template-columns: 200px 150px 100px 200px;
+    
+  }
+
+  .form-reservas{
+    flex-direction: column;
+      }
+
 }
 
 @media only screen and (max-device-width: 768px){
@@ -128,14 +167,14 @@ right: 100px;
     height: 600px;
   }
 
-  h1.hero__titulos__h1{
+  .hero__titulos h1{
     font-size: 4rem;
-    letter-spacing: 2rem;
+    letter-spacing: 1.8rem;
     
 }
 
-.hero__titulos__sub{
-  font-size: 1rem;
+.hero__titulos p{
+  font-size: 1.5rem;
   letter-spacing: 0.8rem;
 
 }
@@ -169,8 +208,28 @@ right: 100px;
     font-size: 0.8rem;
       }
 
+  /*PÁGINA RESTAURANTE*/
+     
+        .galeria-food{
+          display: none;
+      }
+
+      .horarios__container{
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .horarios__container ul li{
+        font-size: 1rem;
+        padding: 0.5rem;
+
+      
+      }
+      
 
 }
+
+
 
 @media only screen and (max-device-width: 576px){
 
@@ -190,13 +249,13 @@ right: 100px;
   height: 500px;
 }
 
-.hero__titulos__h1{
-  font-size: 3rem;
-  letter-spacing: 2rem;
+.hero__titulos h1{
+  font-size: 2.8rem;
+  letter-spacing: 1.6rem;
 
 }
 
-.hero__titulos__sub{
+.hero__titulos p{
   font-size: 1rem;
   letter-spacing: 0.8rem;
 
