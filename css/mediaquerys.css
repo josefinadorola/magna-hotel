@@ -370,7 +370,9 @@ right: 100px;
   /*Section Hero*/
 
 #hero{
-  background-image: url(../assets/img/section-hero-mq.png);
+  background-image: url(../assets/img/section-hero-mq-2.png);
+  background-position: left;
+  background-position: bottom;
   height: 500px;
 }
 
