@@ -70,13 +70,15 @@ display: block;
     background-color: var(--brown);
     color: var(--white);
     cursor: pointer;
-    padding: 8px 15px;
+    padding: 10px 15px;
+    width: 300px;
     font-size: 1rem;
     letter-spacing: 0.2rem;
     border-radius: 0.2rem;  
     border: transparent; 
-    width: 230px;
-    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn a{
@@ -128,7 +130,8 @@ display: block;
 
 
 .navbar, 
-.navbar__list{
+.navbar__list,
+.navbar__user{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -137,7 +140,8 @@ display: block;
 
 }
 
-.navbar__list a{
+.navbar__list a, 
+.navbar__user a{
     color: var(--brown);
     transition: transform 1s;
 }
@@ -168,8 +172,37 @@ display: block;
   font-size: 1.5rem;
 }
 
-#toggle-menu{
+#toggle-menu,
+#user-menu{
   display: none;
+}
+
+.navbar__user{
+  background-color: var(--white);
+  width: 15%;
+   position: absolute;
+  top: 100px;
+  right: 0;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+  border: 3px solid var(--brown);
+  transform: translateX(200%);
+  transition: all 0.8s ease-out;
+    }
+
+.user-label{
+order: 2;
+position: absolute;
+right: 50px;
+top: 38px;
+}  
+ 
+#user-menu:checked ~ .navbar__user{
+  transform: translateX(0%);
+  transition: all 0.8s ease-in;
 }
 
 /*Section Hero*/
@@ -254,25 +287,24 @@ gap: 4rem;
 /*Section Hotel*/
 
 #hotel{
-    background-image: url(../assets/img/hotel.webp);
+    /* background-image: url(../assets/img/hotel.webp); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23d1d1d1' fill-opacity='0.4' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
     display: flex;
-    justify-content: center;
-
-   
+    justify-content: center;  
 }
 
 .hotel__container{
   width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    
    
 }
 
 .hotel__container h3{
-    color: var(--white);
+    color: var(--brown);
     font-size: 1.5rem;
     padding: 1rem;
     
@@ -280,13 +312,13 @@ gap: 4rem;
 
 .hotel__hab{
     width: 100%;
-    background-color: rgb(0, 0, 0, 0.8);
+    /* background-color: rgb(0, 0, 0, 0.8); */
     border-radius: 1rem;
     display: flex;
     gap: 1rem;
     flex-direction: column; 
-    align-items: center;
-    padding: 1rem 0 2rem;
+    padding: 0;
+
  }
 
 
@@ -295,9 +327,8 @@ gap: 4rem;
   width: 100%;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
-    padding: 1rem;
     border-radius: 0.2rem;
 
 }
@@ -309,6 +340,7 @@ gap: 4rem;
     background-color: var(--white);
     border-radius: 0.5rem;
     position: relative;
+    box-shadow: 0 0 10px 2px #8a8787;
 
     
 }
@@ -352,7 +384,7 @@ gap: 4rem;
 
  .food__container{
   flex-direction: column;
-  justify-content: center;
+  
 }
 
 .food__container h2{
@@ -736,8 +768,9 @@ gap: 1rem;
 .form-reservas{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
+
     }
 
 
@@ -751,11 +784,12 @@ gap: 1rem;
 
 .form-reservas input:nth-child(3){
     width: 140px;
+    color: var(--gray);
 }
 
 .form-reservas input:nth-child(4){
-  width: 80px;
-
+  width: 100px;
+  color: var(--gray);
 }
 
 .btn-resto{
@@ -930,7 +964,7 @@ gap: 1rem;
     box-shadow: 0 0 10px 2px #8a8787;
   }
 
-  /*Habitaciones*/
+  /*hOTEL HABITACIONES*/
 
   .habitaciones-hotel{
     display: flex;
@@ -950,7 +984,6 @@ gap: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0 0 10px 2px #8a8787;
     padding: 1rem;
 }
 
@@ -959,6 +992,7 @@ gap: 1rem;
     flex-direction: column;
     gap: 3rem;
     padding: 2rem;
+    box-shadow: 0 0 10px 2px #8a8787;
 
 }
 
@@ -1028,7 +1062,7 @@ gap: 1rem;
      background-color: var(--azul);
      display: flex;
      justify-content: center;
-     padding: 2rem 0;
+     padding: 4rem 0;
 
 }
 
@@ -1049,8 +1083,8 @@ gap: 1rem;
 .form-reservas-room{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
     gap: 2rem;
-   padding: 1rem;
 }
 
 .form-reservas-room span{
@@ -1115,4 +1149,179 @@ gap: 1rem;
   
   }
 
- 
+/*------------------------------*/
+
+ /* PAGINA LOGIN */
+
+ .body-user{
+  background-image: url(../assets/img/login.jpg);
+  background-size: cover;
+  
+ }
+
+ .main-user{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+
+ }
+
+ .container-user{
+  border-radius: 1rem;
+  width: 90%;
+  height: 80vh;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  box-shadow: 0 0 10px 2px var(--gray);
+ }
+
+ /*FORMULARIO LOGIN*/
+
+ .container-user h1{
+  color: var(--azul);
+  letter-spacing: 0.5rem;
+  padding: 0 1rem;
+  letter-spacing: 1.2rem;
+  padding-top: 100px;
+}
+
+
+.form-login p{
+  color: var(--azul);
+  font-weight: 400;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.form-login{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  }
+
+
+.form-login input{
+width: 300px;
+padding: 1rem;
+border: none;
+border-radius: 0.2rem;
+font-size: 0.8rem;
+border: 1px solid var(--azul);
+}
+
+
+.btn-resto{
+  background-color: var(--azul);
+  width: 160px;
+
+}
+
+.btn-user{
+  background-color: var(--azul);
+  padding: 1rem;
+}
+
+.register{
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: var(--crema);
+  display: flex;
+  justify-content: center;
+
+}
+
+.register p, 
+.register a{
+color: var(--azul);
+padding: 1rem;
+font-size: 1rem;
+font-weight: 400;
+}
+
+.btn-register{
+  background-color: transparent;
+  border: 1px solid var(--azul);
+  padding: 0.5rem;
+  }
+
+  .btn-register i{
+    font-size: 1.5rem;
+    color: var(--azul);
+  }
+
+
+
+
+  /*FORMULARIO REGISTRO*/
+  .form-register p{
+    color: var(--azul);
+    font-weight: 400;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  
+  .form-register{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    }
+  
+  
+  .form-register input{
+  width: 300px;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  border: 1px solid var(--azul);
+  }
+  
+
+  .login{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .login p, 
+  .login a{
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0.8rem 0.5rem;
+  }
+  
+  .btn-login{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    display: flex;
+    gap: 1rem;
+    width: 350px;
+    }
+  
+    .btn-login i{
+      font-size: 1.5rem;
+      color: var(--white);
+    }

@@ -2,7 +2,7 @@
 
   /*Navbar*/
 
-  .navbar i{
+  .toggle-label i{
     display: block;
 }
 
@@ -151,8 +151,15 @@ right: 100px;
     padding: 0;
         }
 
-      .intro-resto__container,
-      .intro-hotel__container{
+        .horarios,{
+      padding: 3rem 0;
+          }
+
+        .testimonios{
+      padding-top: 3rem;
+          }
+
+      .intro-resto__container{
       padding: 1rem;
       background-image: none;
       }
@@ -187,17 +194,6 @@ right: 100px;
 
 }
 
-
-/*Secciones reservas*/
-  .resto-reservas, {
-padding: 2rem;
-  
-  }
-
-  .form-reservas,
-  .form-reservas-room{
-    flex-direction: column;
-       }
 
 }
 
@@ -254,6 +250,7 @@ padding: 2rem;
           display: none;
       }
 
+
       .horarios__container,
       .servicios__container{
         flex-direction: column;
@@ -264,9 +261,23 @@ padding: 2rem;
       .servicios__container ul li{
         font-size: 1rem;
         padding: 0.5rem;
-
       
       }
+
+      /*Secciones reservas restaurante*/
+  .resto-reservas {
+    padding: 0;
+      
+      }
+
+      .form-reservas{
+            flex-direction: column;
+           }
+
+           .form-reservas input{
+               width: 100%;
+               padding: 1rem;
+              }
 
         /*Habitaciones descripcion*/
 
@@ -276,7 +287,7 @@ padding: 2rem;
 
         .habitaciones{
              gap: 2rem;
-          padding: 1rem;
+          padding: 2rem;
       
       }
 
@@ -292,7 +303,7 @@ padding: 2rem;
 }
 
 .habitaciones__descripcion__datos ul{
-  padding: 0.5rem;
+  padding: 0;
 }
 
 .habitaciones__descripcion__datos ul li{
@@ -365,16 +376,16 @@ padding: 2rem;
   }
 
   #nosotros{
-    height: 300px;
+    height: 320px;
   }
 
   #food{
-    height: 430px;
+    height: 450px;
   }
 
     #hotel{
-      background-image: none;
-      height: 1000px;
+      height: 960px;
+      padding: 1rem 0;
     }
 
    #contacto{
@@ -382,8 +393,16 @@ padding: 2rem;
     }
 
     #hotel h3{
-     font-size: 1.5rem;
+     font-size: 1.2rem;
      letter-spacing: 0.5rem;
+    }
+
+    .container h2{
+      font-size: 1.7rem;
+    }
+
+    .hotel__hab{
+      background-color: transparent;
     }
 
     .hotel__hab__cont{
@@ -428,11 +447,33 @@ padding: 2rem;
   /*---------*/
   
 /*PAGINAS*/
+.h1-pages{
+  height: 200px;
+}
+
+h1.h1-restaurante,
+h1.h1-hotel{
+  font-size: 2.5rem;
+}
+
+.intro-resto__container__datos h2,
+.intro-hotel__container__datos h2{
+  font-size: 1.8rem;
+  letter-spacing: 0.6rem;
+  line-height: 2.5rem;
+}
 
 .intro-resto__container,
 .intro-hotel__container{
 padding: 0;
 }
+
+/*Formulario reservas restaurante*/
+.resto-reservas {
+  padding: 2rem;
+  height: 450px;
+    
+    }
 
         /*Habitaciones descripcion*/
 
@@ -442,8 +483,7 @@ padding: 0;
 
         .habitaciones{
              gap: 2rem;
-          padding: 0.5rem;
-     
+         
       }
 
       .habitaciones__descripcion{
@@ -451,16 +491,16 @@ padding: 0;
         gap: 2rem;
     }
 
-      .habitaciones-img{
-flex-direction:row;
+   
+    .habitaciones-img{
+      align-items: center;
 
-        }
+      }
 
-  .habitaciones-img img{
-    width: 150px;
-    height: 100px;
-
-}
+        .habitaciones-img img{
+          width: 100%;
+          height: auto;
+       }
 
 .habitaciones__descripcion__datos p{
   font-size: 1rem;
@@ -472,9 +512,25 @@ flex-direction:row;
 }
 
 .habitaciones__descripcion__datos ul li{
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.5rem;
 
 }
+
+   /*Formulario reserva hotel*/
+   .form-reservas-room{
+    flex-direction: column;
+  }
+
+  .form-reservas-room span{
+   flex-direction: column;
+  }
+  
+  .form-reservas-room input:nth-child(2),
+  .form-reservas-room input:nth-child(4), 
+  .form-reservas-room select{
+      width: 100%;
+      padding: 1rem;
+     }
 
 }

@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html"
+      <a href="../index.html"
         ><img src="../assets/img/logo2.png" alt="logo" class="header__logo"
       /></a>
       <nav class="navbar">
@@ -29,7 +29,12 @@
         </ul>
       </nav>
       <div class="header__icons">
-        <a href="#"><i class="fa-regular fa-user icons"></i></a>
+        <label for="user-menu" class="user-label"><i class="fa-regular fa-user icons"></i></label>
+        <input type="checkbox" id="user-menu"> 
+        <ul class="navbar__user">
+          <li><a href="login.html">INGRESAR</a></li>
+          <li><a href="register.html">REGISTRARSE</a></li>
+        </ul>
       </div>
     </header>
     
@@ -44,7 +49,7 @@
         <h2>HOTEL <span>DE ENSUEÑO</span></h2>
         <span class="divisor divisor-hotel"></span>
         <P>Elige entre nuestras 9 amplias y modernamente diseñadas habitaciones; cada una con una terraza privada con magnífica vista a la Cordillera de los Andes. Tonos tierra, maderas cálidas, crean encantadores espacios para descansar y disfrutar después de un día explorando una de las mejores regiones de vino de la Argentina. </P>
-        <button class="btn btn-reserva"><a href="#reservas-hotel">RESERVAS</a></button>
+        <a href="#reservas-hotel" class="btn btn-reserva">RESERVAS</a>
       </div>
         <img src="../assets/img/hotel/simple4.jpg" alt="hotel">
       </div>
@@ -54,6 +59,7 @@
 <h3>HABITACIONES</h3>
 <span class="divisor  divisor-hotel"></span>
         <div class="habitaciones-container container">
+
           <div class="habitaciones">
             <div class="habitaciones__titulos">
               <h4>HABITACIÓN SUITE</h4>
@@ -71,28 +77,23 @@
                   <li><span class="fa-li"><i class="fa-solid fa-user"></i></span>Secador de pelo</li>
                 </ul>
               
-              <button class="btn btn-reserva"><a href="#reservas-hotel">RESERVAS</a></button>
         </div>
         <div class="habitaciones-img">
           <img src="../assets/img/hotel/simple2.jpg" alt="Simple">
           <img src="../assets/img/hotel/simple3.jpg" alt="Simple">
           <img src="../assets/img/hotel/simple4.jpg" alt="Simple">
-        </div>
+        </div>        
+
       </div>
+      <a href="#reservas-hotel" class="btn btn-reserva">RESERVAR</a>
             </div>
 
             <div class="habitaciones">
               <div class="habitaciones__titulos">
                 <h4>HABITACIÓN TWIN</h4>
                 <p>2 Bed | Sleeps 2</p>
-              </div>
-                           <div class="habitaciones__descripcion">
-                            <div class="habitaciones-img">
-                              <img src="../assets/img/hotel/twin1.jpg" alt="Twin">
-                              <img src="../assets/img/hotel/twin2.jpg" alt="Twin">
-                              <img src="../assets/img/hotel/twin3.webp" alt="Twin">
-                            </div>
-                
+              </div>      
+              <div class="habitaciones__descripcion"> 
                 <div class="habitaciones__descripcion__datos">
                 <p>Contamos con 3 habitaciones Twin. Todas son distintas, de tamaños similares cerca de los 26m2, con camas y sábanas de la mejor calidad. Las puertas abren a la galería o pérgolas con cómodos asientos para disfrutar de la vista al jardín y a las montañas.</p>
                     <ul class="fa-ul">
@@ -102,11 +103,18 @@
                     <li><span class="fa-li"><i class="fa-solid fa-wind"></i></span>Aire acondicionado frío/calor</li>
                     <li><span class="fa-li"><i class="fa-solid fa-user"></i></span>Secador de pelo</li>
                   </ul>
-                
-                <button class="btn btn-reserva"><a href="#reservas-hotel">RESERVAS</a></button>
-          </div>
-        </div>
+             
               </div>
+              <div class="habitaciones-img">
+                <img src="../assets/img/hotel/twin1.jpg" alt="Twin">
+                <img src="../assets/img/hotel/twin2.jpg" alt="Twin">
+                <img src="../assets/img/hotel/twin3.webp" alt="Twin">
+              </div>
+            </div>
+            <a href="#reservas-hotel" class="btn btn-reserva">RESERVAR</a>
+
+        </div>
+       
 
               <div class="habitaciones">
                 <div class="habitaciones__titulos">
@@ -123,8 +131,7 @@
                       <li><span class="fa-li"><i class="fa-solid fa-wind"></i></span>Aire acondicionado frío/calor</li>
                       <li><span class="fa-li"><i class="fa-solid fa-user"></i></span>Secador de pelo</li>
                     </ul>
-                  
-                  <button class="btn btn-reserva"><a href="#reservas-hotel">RESERVAS</a></button>
+                
             </div>
             <div class="habitaciones-img">
               <img src="../assets/img/hotel/triple1.jpg" alt="Triple">
@@ -132,9 +139,10 @@
               <img src="../assets/img/hotel/triple3.jpg" alt="Triple">
             </div>
           </div>
+          <a href="#reservas-hotel" class="btn btn-reserva">RESERVAR</a>
                           </div>
-
           </div>
+    
       </section>
      
 

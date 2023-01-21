@@ -12,26 +12,51 @@
     <link rel="stylesheet" href="../css/mediaquerys.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="body-user">
     <header class="header">
-      <a href="index.html"
+      <a href="../index.html"
         ><img src="../assets/img/logo2.png" alt="logo" class="header__logo"
       /></a>
       <nav class="navbar">
         <label for="toggle-menu" class="toggle-label"><i class="fas fa-bars"></i></label>
         <input type="checkbox" id="toggle-menu"> 
         <ul class="navbar__list">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#nosotros">NOSOTROS</a></li>
-          <li><a href="#gastronomia">RESTAURANTE</a></li>
-          <li><a href="#hotel">HOTEL</a></li>
-          <li><a href="#reservas">RESERVAS</a></li>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../index.html#nosotros">NOSOTROS</a></li>
+          <li><a href="../pages/restaurante.html">RESTAURANTE</a></li>
+          <li><a href="../pages/habitaciones.html">HOTEL</a></li>
+          <li><a href="../index.html#contacto">CONTACTO</a></li>
         </ul>
       </nav>
       <div class="header__icons">
-        <a href="#contacto"><i class="fa-regular fa-envelope icons"></i></a>
-        <a href="#"><i class="fa-regular fa-user icons"></i></a>
+        <label for="user-menu" class="user-label"><i class="fa-regular fa-user icons"></i></label>
+        <input type="checkbox" id="user-menu"> 
+        <ul class="navbar__user">
+          <li><a href="login.html">INGRESAR</a></li>
+          <li><a href="register.html">REGISTRARSE</a></li>
+        </ul>
       </div>
-    </header> 
+    </header>
+    <main class="main-user">
+        <div class="container-user container-login">
+<h1>LOGIN</h1>
+
+<form class="form-login">
+  <P>Ingresa tus datos:</P>
+  <input type="email" placeholder="Correo electrónico" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button class="btn btn-user">INGRESAR</button>
+</form>
+<div class="register">
+<p>¿No tienes cuenta todavía?</p>
+<div class="btn btn-register">
+  <i class="fa-solid fa-user-plus icons"></i>
+  <a href="../pages/register.html">CREA TU CUENTA</a>
+</div>
+
+</div>
+        </div>
+
+    </main>
 </body>
 </html>
