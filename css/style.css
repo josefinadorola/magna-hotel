@@ -384,8 +384,7 @@ gap: 4rem;
 
  .food__container{
   flex-direction: column;
-  
-}
+ }
 
 .food__container h2{
   display: flex;
@@ -394,6 +393,7 @@ gap: 4rem;
 
 .food__container__datos{
 display: flex;
+flex-wrap: wrap;
 gap: 4rem;
 }
 
@@ -406,7 +406,7 @@ gap: 4rem;
 .food__container__datos__p{
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 
@@ -1329,4 +1329,7 @@ font-weight: 400;
     .btn-login i{
       font-size: 1.5rem;
       color: var(--white);
+    }
+
+
     }

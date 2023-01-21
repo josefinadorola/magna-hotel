@@ -388,7 +388,7 @@ right: 100px;
 
 /*Section Nosotros*/
 
-  .nosotros__datos img, .food__container__datos img{
+  .nosotros__datos img{
     display: none;
   }
 
@@ -408,7 +408,7 @@ right: 100px;
   }
 
   #food{
-    height: 450px;
+    height: 680px;
   }
 
     #hotel{
@@ -441,6 +441,16 @@ right: 100px;
     .hotel__hab__cont__card{
       width: 100%;
      
+  }
+
+  .food__container__datos__p{
+    gap: 2rem;
+  }
+
+  .food__container__datos__p .btn,
+  .hotel__hab__cont .btn{
+    padding: 0.8rem;
+    width: 100%;
   }
 
   .form-container{
@@ -561,14 +571,16 @@ padding: 0;
   .form-reservas-room input:nth-child(2),
   .form-reservas-room input:nth-child(4), 
   .form-reservas-room select{
-      width: 100%;
+      width: 310px;
       padding: 1rem;
      }
 
   /*registro/login*/
+
   .container-user h1{
     font-size: 1.5rem;
     letter-spacing: 0.7rem;
+    padding: 0;
   }
 
   .login a,
@@ -579,5 +591,15 @@ padding: 0;
   .btn-login{
     width: 300px;
     }
+
+    .body-user{
+      background-image: none;
+     }
+  
+     .container-user{
+      box-shadow: none;
+      width: 100%;
+          }
+  
 
 }
