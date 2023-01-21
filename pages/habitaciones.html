@@ -55,12 +55,12 @@
 <span class="divisor  divisor-hotel"></span>
         <div class="habitaciones-container container">
           <div class="habitaciones">
+            <div class="habitaciones__titulos">
+              <h4>HABITACIÓN SUITE</h4>
+              <p>1 King Bed | Sleeps 2</p>
+            </div>
             <div class="habitaciones__descripcion">
-              <div class="habitaciones__descripcion__titulos">
-                <h4>HABITACIÓN SUITE</h4>
-                <p>1 King Bed | Sleeps 2</p>
-              </div>
-              <div class="habitaciones__descripcion__datos">
+                        <div class="habitaciones__descripcion__datos">
               <p>Nuestras suites ofrecen un colorido y espectacular oasis diseñado con los mejores materiales. La "Suite" se viste de gala con un jacuzzi privado al aire libre y una terraza privada con vistas a los viñedos.</p>
                   <ul class="fa-ul">
                   <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Tamaño: 30 m2</li>
@@ -73,26 +73,26 @@
               
               <button class="btn btn-reserva"><a href="#reservas-hotel">RESERVAS</a></button>
         </div>
-      </div>
         <div class="habitaciones-img">
           <img src="../assets/img/hotel/simple2.jpg" alt="Simple">
           <img src="../assets/img/hotel/simple3.jpg" alt="Simple">
           <img src="../assets/img/hotel/simple4.jpg" alt="Simple">
         </div>
-
+      </div>
             </div>
 
             <div class="habitaciones">
-              <div class="habitaciones-img">
-                <img src="../assets/img/hotel/twin1.jpg" alt="Twin">
-                <img src="../assets/img/hotel/twin2.jpg" alt="Twin">
-                <img src="../assets/img/hotel/twin3.webp" alt="Twin">
+              <div class="habitaciones__titulos">
+                <h4>HABITACIÓN TWIN</h4>
+                <p>2 Bed | Sleeps 2</p>
               </div>
-              <div class="habitaciones__descripcion">
-                <div class="habitaciones__descripcion__titulos">
-                  <h4>HABITACIÓN TWIN</h4>
-                  <p>2 Bed | Sleeps 2</p>
-                </div>
+                           <div class="habitaciones__descripcion">
+                            <div class="habitaciones-img">
+                              <img src="../assets/img/hotel/twin1.jpg" alt="Twin">
+                              <img src="../assets/img/hotel/twin2.jpg" alt="Twin">
+                              <img src="../assets/img/hotel/twin3.webp" alt="Twin">
+                            </div>
+                
                 <div class="habitaciones__descripcion__datos">
                 <p>Contamos con 3 habitaciones Twin. Todas son distintas, de tamaños similares cerca de los 26m2, con camas y sábanas de la mejor calidad. Las puertas abren a la galería o pérgolas con cómodos asientos para disfrutar de la vista al jardín y a las montañas.</p>
                     <ul class="fa-ul">
@@ -109,11 +109,11 @@
               </div>
 
               <div class="habitaciones">
+                <div class="habitaciones__titulos">
+                  <h4>HABITACIÓN TRIPLE</h4>
+                  <p>3 Bed | Sleeps 3</p>
+                </div>
                 <div class="habitaciones__descripcion">
-                  <div class="habitaciones__descripcion__titulos">
-                    <h4>HABITACIÓN TRIPLE</h4>
-                    <p>3 Bed | Sleeps 3</p>
-                  </div>
                   <div class="habitaciones__descripcion__datos">
                   <p>Nuestras habitaciones triples pueden configurarse con 3 camas individuales o con una cama de matrimonio + una cama individual. Al igual que en la habitación twin estas dos opciones están sujetas a disponibilidad a la hora de su llegada.</p>
                       <ul class="fa-ul">
@@ -126,14 +126,13 @@
                   
                   <button class="btn btn-reserva"><a href="#reservas-hotel">RESERVAS</a></button>
             </div>
-          </div>
             <div class="habitaciones-img">
               <img src="../assets/img/hotel/triple1.jpg" alt="Triple">
               <img src="../assets/img/hotel/triple2.jpg" alt="Triple">
               <img src="../assets/img/hotel/triple3.jpg" alt="Triple">
             </div>
-    
-                </div>
+          </div>
+                          </div>
 
           </div>
       </section>
@@ -143,16 +142,22 @@
         <div class="hotel-reservas__container container">
                 <h3>RESERVAS</h3>
              <form class="form-reservas-room">
+             <span>
             <label for="ingreso">Ingreso</label>
             <input type="date" name="ingreso" id="ingreso">
+          </span> 
+          <span>
             <label for="ingreso">Salida</label>
             <input type="date" name="salida" id="salida">
+          </span>
+          <span>
             <label for="habitacion">Habitación</label>
             <select name="personas" id="personas">
               <option value="1">Simple</option>
               <option value="2">Twin</option>
               <option value="3">Triple</option>
             </select>
+          </span>
             <button type="submit" class="btn">CONSULTAR</button>
           </form>
         </div>

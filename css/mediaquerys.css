@@ -83,9 +83,10 @@ right: 100px;
     height: 150px;
   }
 
-  /*PÁGINA RESTAURANTE*/
+  /*PÁGINAS*/
 
-  .intro-resto__container img{
+  .intro-resto__container img,
+  .intro-hotel__container img{
     width: 500px;
     height: 320px;
   }
@@ -99,6 +100,8 @@ right: 100px;
 
 
 @media only screen and (max-device-width: 992px){
+
+  /*INDEX*/
 
   .nosotros__datos{
     gap:2rem;
@@ -131,8 +134,11 @@ right: 100px;
     height: 240px;
 
   }
+  /*FIN INDEX*/
 
-       /*paginas*/
+/*-----------------------------------------*/
+
+       /*PÁGINAS*/
 
        .h1-pages{
         height: 300px;
@@ -140,24 +146,58 @@ right: 100px;
       }
 
 
-      /*PÁGINA RESTAURANTE*/
+      .intro-resto,
+      .intro-hotel{
+    padding: 0;
+        }
 
-      .intro-resto__container{
-padding: 2rem;
+      .intro-resto__container,
+      .intro-hotel__container{
+      padding: 1rem;
+      background-image: none;
       }
 
-  .intro-resto__container img{
+  .intro-resto__container img, 
+  .intro-hotel__container img{
     display: none;
+
   }
- 
+  
+  /*Grid restaurante*/
     .grid-container{
       grid-template-columns: 200px 150px 100px 200px;
     
   }
+  
+  /*Habitaciones descripcion*/
+  .habitaciones__descripcion{
+    gap: 2rem;
+}
 
-  .form-reservas{
+  .habitaciones-img img{
+    width: 300px;
+    height: 180px;
+}
+
+.habitaciones__descripcion__datos ul li{
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--gray);
+  padding: 1rem;
+
+}
+
+
+/*Secciones reservas*/
+  .resto-reservas, {
+padding: 2rem;
+  
+  }
+
+  .form-reservas,
+  .form-reservas-room{
     flex-direction: column;
-      }
+       }
 
 }
 
@@ -208,23 +248,69 @@ padding: 2rem;
     font-size: 0.8rem;
       }
 
-  /*PÁGINA RESTAURANTE*/
+  /*PÁGINAS*/
      
         .galeria-food{
           display: none;
       }
 
-      .horarios__container{
+      .horarios__container,
+      .servicios__container{
         flex-direction: column;
         gap: 0;
       }
 
-      .horarios__container ul li{
+      .horarios__container ul li,
+      .servicios__container ul li{
         font-size: 1rem;
         padding: 0.5rem;
 
       
       }
+
+        /*Habitaciones descripcion*/
+
+        .habitaciones-container{
+          padding: 0.5rem;
+      }
+
+        .habitaciones{
+             gap: 2rem;
+          padding: 1rem;
+      
+      }
+
+  .habitaciones-img img{
+    width: 200px;
+    height: 150px;
+
+}
+
+.habitaciones__descripcion__datos p{
+  font-size: 1rem;
+
+}
+
+.habitaciones__descripcion__datos ul{
+  padding: 0.5rem;
+}
+
+.habitaciones__descripcion__datos ul li{
+  font-size: 0.9rem;
+
+}
+
+.servicios h3, 
+.testimonios .h3-hotel-test,
+.habitaciones-hotel h3{
+  font-size: 1.5rem;
+  letter-spacing: 0.6rem;
+}
+
+.habitaciones__titulos h4{
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;    
+}
       
 
 }
@@ -337,5 +423,58 @@ padding: 2rem;
   .footer_container_tel{
     font-size: 0.8rem;
   }
+
+
+  /*---------*/
+  
+/*PAGINAS*/
+
+.intro-resto__container,
+.intro-hotel__container{
+padding: 0;
+}
+
+        /*Habitaciones descripcion*/
+
+        .habitaciones-container{
+          padding: 0.5rem;
+      }
+
+        .habitaciones{
+             gap: 2rem;
+          padding: 0.5rem;
+     
+      }
+
+      .habitaciones__descripcion{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+      .habitaciones-img{
+flex-direction:row;
+
+        }
+
+  .habitaciones-img img{
+    width: 150px;
+    height: 100px;
+
+}
+
+.habitaciones__descripcion__datos p{
+  font-size: 1rem;
+
+}
+
+.habitaciones__descripcion__datos ul{
+  padding: 0.5rem;
+}
+
+.habitaciones__descripcion__datos ul li{
+  font-size: 0.9rem;
+  padding: 0.5rem;
+
+}
 
 }
