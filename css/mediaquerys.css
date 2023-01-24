@@ -42,8 +42,11 @@ right: 100px;
 
   /*Index*/
 
-  #nosotros, #food, #hotel, #contacto{
-    height: 600px;
+  #nosotros, #food, #hotel{
+    padding: 0.5rem;
+  }
+  
+  #contacto{
     padding: 0.5rem;
   }
 
@@ -93,6 +96,7 @@ right: 100px;
 
   /*INDEX*/
 
+  
   .nosotros__datos{
     gap:2rem;
   }
@@ -382,27 +386,6 @@ right: 100px;
     gap: 1rem;
   }
 
-  #nosotros{
-    height: 250px;
-  }
-
-  #nosotros h2,
-  #nosotros .divisor{
-    display: none;
-  }
-
-  #food, #contacto{
-    height: 720px;
-  }
-
-    #hotel{
-      height: 910px;
-      padding: 0;
-    }
-
-    #contacto{
-      padding: 0;
-    }
 
      .hotel__hab{
    flex-direction: column;
@@ -425,7 +408,7 @@ right: 100px;
 
   .food__container__datos{
     flex-direction: column;
-  }
+    }
 
   .food__container__datos__p{
     gap: 2rem;
@@ -433,6 +416,8 @@ right: 100px;
 
   .food__container img{
     width: 100%;
+    height: auto;
+       
   }
 
   .food__container__datos__p .btn,
