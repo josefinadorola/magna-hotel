@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/22c08125c6.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" href="./assets/img/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mediaquerys.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel='stylesheet' type='text/css'>
-    <title>Magna-Hotel&Wine</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="index.html"
-        ><img src="./assets/img/logo2.png" alt="logo" class="header__logo"
-      /></a>
-      <nav class="navbar">
-        <label for="toggle-menu" class="toggle-label"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="toggle-menu"> 
-        <ul class="navbar__list">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#nosotros">NOSOTROS</a></li>
-          <li><a href="#food">RESTAURANTE</a></li>
-          <li><a href="#hotel">HOTEL</a></li>
-          <li><a href="#contacto">CONTACTO</a></li>
-        </ul>
-      </nav>
-      <div class="header__icons">
-        <label for="user-menu" class="user-label"><i class="fa-regular fa-user icons"></i></label>
-        <input type="checkbox" id="user-menu"> 
-        <ul class="navbar__user">
-          <li><a href="./pages/login.html">INGRESAR</a></li>
-          <li><a href="./pages/register.html">REGISTRARSE</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/22c08125c6.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./assets/img/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mediaquerys.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel='stylesheet'
+    type='text/css'>
+  <title>Magna-Hotel&Wine</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img src="./assets/img/logo2.png" alt="logo" class="header__logo" /></a>
+    <nav class="navbar">
+      <label for="toggle-menu" class="toggle-label"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="toggle-menu">
+      <ul class="navbar__list">
+        <li class="active"><a href="index.html">HOME</a></li>
+        <li><a href="#nosotros">NOSOTROS</a></li>
+        <li><a href="#food">RESTAURANTE</a></li>
+        <li><a href="#hotel">HOTEL</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <div class="header__icons">
+      <label for="user-menu" class="user-label"><i class="fa-regular fa-user icons"></i></label>
+      <input type="checkbox" id="user-menu">
+      <ul class="navbar__user">
+        <li><a href="./pages/login.html">INGRESAR</a></li>
+        <li><a href="./pages/register.html">REGISTRARSE</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero" class="section">
+      <div class="hero__titulos">
+        <h1>MAGNA</h1>
+        <p>HOTEL&WINE</p>
       </div>
-    </header>
-    <main class="main">
-      <section id="hero" class="section">
-        <div class="hero__titulos">
-          <h1>MAGNA</h1>
-          <p>HOTEL&WINE</p>
-        </div>
-      </section>
-      <section id="nosotros" class="section">
-        <div class="container nosotros__container">
-          <div class="nosotros__datos">
-            <img src="./assets/img/nosotros.webp" alt="nosotros" />
-            <div class="nosotros__datos__parrafo">
+    </section>
+    <section id="nosotros" class="section">
+      <div class="container nosotros__container">
+        <div class="nosotros__datos">
+          <img src="./assets/img/nosotros.webp" alt="nosotros" />
+          <div class="nosotros__datos__parrafo">
             <p>
               <span>MAGNA</span> un lugar con historia y estilo, que vive al
               ritmo de la naturaleza y exalta los sentidos. Recorran nuestra
@@ -69,118 +67,115 @@
             <span class="divisor"></span>
           </div>
         </div>
-      </section>
+    </section>
 
-      <section id="hotel" class="section">
-        <div class="container  hotel__container">
-          <h2>HOTEL BOUTIQUE</h2>
-          <span class="divisor"></span>
-          <div class="hotel__hab">
-
-              <div class="hotel__hab__card">
-               <p>SUITE</p> 
-
-              </div>
-              <div class="hotel__hab__card">
-                <p>TRIPLE</p> 
-                
-              </div>
-              <div class="hotel__hab__card">
-                <p>TWIN</p> 
-              </div>  
-          </div>
-          <a href="./pages/habitaciones.html" class="btn">VER MÁS</a>
+    <section id="hotel" class="section">
+      <div class="container  hotel__container">
+        <h2>HOTEL BOUTIQUE</h2>
+        <span class="divisor"></span>
+        <div class="hotel__hab">
+          <a href="./pages/habitaciones.html#suite" class="hotel__hab__card">
+           <span><i class="fa-solid fa-square-arrow-up-right"></i></span> 
+           <p>SUITE</p>
+          </a>
+          <a href="./pages/habitaciones.html#triple" class="hotel__hab__card">
+            <span><i class="fa-solid fa-square-arrow-up-right"></i></span> 
+            <p>TRIPLE</p>
+          </a>
+          <a href="./pages/habitaciones.html#twin" class="hotel__hab__card">
+            <span><i class="fa-solid fa-square-arrow-up-right"></i></span> 
+            <p>TWIN</p>
+          </a>
         </div>
-      </section>
-      <!--Sección gastronomia-->
-      <section id="food" class="section">
-        <div class="container food__container">
+        <a href="./pages/habitaciones.html" class="btn">VER MÁS</a>
+      </div>
+    </section>
+    <!--Sección gastronomia-->
+    <section id="food" class="section">
+      <div class="container food__container">
         <h2>WINE & FOOD</h2>
         <span class="divisor"></span>
         <div class="food__container__datos">
           <div class="food__container__datos__p">
             <h3>NUESTRO <span>RESTAURANTE
-            </span>
+              </span>
             </h3>
             <span class="divisor"></span>
-         <p>Una cocina basada en el uso de materias primas orgánicas, mixtura de técnicas e ingredientes de estación, armonizada con nuestros vinos y espumantes. Ganador del premio Mejor Restaurante de bodega del Mundo 2020.</p>
-         <a href="./pages/restaurante.html" class="btn">RESTAURANTE</a>    
-        </div>
-        <img src="./assets/img/wine.webp" alt="wine">
-      
+            <p>Una cocina basada en el uso de materias primas orgánicas, mixtura de técnicas e ingredientes de estación,
+              armonizada con nuestros vinos y espumantes. Ganador del premio Mejor Restaurante de bodega del Mundo 2020.
+            </p>
+            <a href="./pages/restaurante.html" class="btn">RESTAURANTE</a>
+          </div>
+          <img src="./assets/img/wine.webp" alt="wine">
+
         </div>
       </div>
-      </section>
-      <section id="contacto" class="section">
-        <div class="container  contacto__container">
-          <h2>CONTACTO</h2>
-        
-          <span class="divisor"></span>
-          <form class="formulario">
-            <div class="form-container">
-              <span>
-            <label for="nombre">NOMBRE COMPLETO</label>
-            <input type="text" id="nombre" />
-          </span>
-          <span>
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" />
-          </span>
-            </div>
+    </section>
+    <section id="contacto" class="section">
+      <div class="container  contacto__container">
+        <h2>CONTACTO</h2>
+
+        <span class="divisor"></span>
+        <form class="formulario">
           <div class="form-container">
             <span>
-            <label for="nombre">PAÍS DE RESIDENCIA</label>
-            <input type="text" id="pais" />
-          </span>
-           <span>
-            <label for="nombre">ASUNTO DE CONSULTA</label>
-            <input type="text" id="nombre" />
-          </span>
-        </div>
+              <label for="nombre">NOMBRE COMPLETO</label>
+              <input type="text" id="nombre" />
+            </span>
+            <span>
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" />
+            </span>
+          </div>
+          <div class="form-container">
+            <span>
+              <label for="nombre">PAÍS DE RESIDENCIA</label>
+              <input type="text" id="pais" />
+            </span>
+            <span>
+              <label for="nombre">ASUNTO DE CONSULTA</label>
+              <input type="text" id="nombre" />
+            </span>
+          </div>
           <div>
             <label for="mensaje">MENSAJE</label>
-            <textarea
-              name="mensaje"
-              id=""
-              cols="30"
-              rows="10"  ></textarea>
-            </div>
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+          </div>
 
-          </form>
-          <button type="submit" class="btn">ENVIAR</button>
- 
-        </div>
-      </section>
-      <section id="premios" class="section">
-        <div class="container  premios__container">
-<img src="./assets/img/kayak.webp" alt="award1">
-<img src="./assets/img/trip.png" alt="award2">
-<img src="./assets/img/great.png" alt="award3">
-        </div>
-      </section>
+        </form>
+        <button type="submit" class="btn">ENVIAR</button>
 
-    </main>
-
-    <footer class="footer">
-      <div class="footer__container">
-        <a href="index.html"><i class="fa-solid fa-arrow-up flecha"></i></a>
-        <p class="footer_container_dire">
-          Guardia Vieja 2089, Luján de Cuyo, Mendoza.
-        </p>
-        <p class="footer_container_tel">
-          T: +54 9 0261 217-6097 |<a href="#contacto"> CONTACTO</a> |<a
-            href="#hotel"
-          >
-            RESERVAS
-          </a>
-        </p>
-        <div class="footer__container__redes">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section id="premios" class="section">
+      <div class="container  premios__container">
+        <img src="./assets/img/kayak.webp" alt="award1">
+        <img src="./assets/img/trip.png" alt="award2">
+        <img src="./assets/img/great.png" alt="award3">
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="index.html"><i class="fa-solid fa-arrow-up flecha"></i></a>
+      <p class="footer_container_dire">
+        Guardia Vieja 2089, Luján de Cuyo, Mendoza.
+      </p>
+      <p class="footer_container_tel">
+        T: +54 9 0261 217-6097 |<a href="#contacto"> CONTACTO</a> |<a href="#hotel">
+          RESERVAS
+        </a>
+      </p>
+      <div class="footer__container__redes">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
