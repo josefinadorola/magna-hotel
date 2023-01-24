@@ -371,8 +371,8 @@ right: 100px;
   }
 
   .container h2{
-    font-size: 1.4rem;
-    letter-spacing: 0.4rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
   }
 
   .nosotros__container, 
@@ -392,7 +392,7 @@ right: 100px;
   }
 
   #food, #contacto{
-    height: 700px;
+    height: 720px;
   }
 
     #hotel{
@@ -441,10 +441,6 @@ right: 100px;
     width: 100%;
   }
 
-  .contacto__container{
-   padding: 1.6rem;
- 
-}
 
   .form-container{
     flex-wrap: wrap;
