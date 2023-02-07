@@ -185,7 +185,7 @@ right: 100px;
 @media only screen and (max-device-width: 768px){
 
   .navbar__user{
-    width: 35%;
+    width: 50%;
   }
 
   #hero{
@@ -218,6 +218,15 @@ right: 100px;
   gap: 1rem;
   padding: 0.5rem;
   }
+
+  .hotel__hab{
+    flex-direction: column;
+      }
+ 
+     .hotel__hab__card{
+       width: 100%;
+      
+   }
 
   .food__container__datos__p{
     gap: 0.8rem;
@@ -386,15 +395,6 @@ right: 100px;
     gap: 1rem;
   }
 
-
-     .hotel__hab{
-   flex-direction: column;
-     }
-
-    .hotel__hab__card{
-      width: 100%;
-     
-  }
 
   .hotel__hab__card p{
     padding: 0.5rem;
