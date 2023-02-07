@@ -453,12 +453,12 @@ margin-top: 2rem;
 
 
 .food__container__datos__p h3{
-  font-size: 2rem;
+  font-size: 1.7rem;
     color: var(--brown);
     font-weight: 400;
     justify-content: left;
     gap: 0.5rem;
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.4rem;
   
 }
 
