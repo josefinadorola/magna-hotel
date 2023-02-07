@@ -524,7 +524,6 @@ padding: 0;
 
 }
 
-
 .habitaciones__descripcion__datos ul li{
   font-size: 1rem;
   padding: 0.5rem;
@@ -553,6 +552,11 @@ padding: 0;
       height: 50px;
       padding: 1rem;
      }
+
+     .servicios__container ul li{
+      padding: 0.8rem 0;
+    
+    }
 
   /*registro/login*/
 
