@@ -457,7 +457,6 @@ margin-top: 2rem;
     color: var(--brown);
     font-weight: 400;
     justify-content: left;
-    flex-direction: column;
     gap: 0.5rem;
     letter-spacing: 0.6rem;
   
@@ -505,8 +504,6 @@ margin-top: 2rem;
     width: 100%;
 
   }
-
-
  
   .formulario label {
     text-align: left;
@@ -525,12 +522,13 @@ margin-top: 2rem;
   .formulario .btn{
    color: var(--white);
    border-radius: 0.2rem;
-     
+  margin: 2rem auto;
+      
   }
  
   .formulario .btn:hover {
-    font-weight: bold;
-    border: 2px solid var(--black);
+     border: 1px solid var(--brown);
+    color: var(--brown);
   }
 
   .formulario textarea {
@@ -1294,6 +1292,12 @@ border: 1px solid var(--azul);
   padding: 1rem;
 }
 
+.btn-user:hover{
+  background-color: transparent;
+  border: 1px solid var(--azul);
+  color: var(--azul);
+}
+
 .register{
   width: 100%;
   display: flex;
@@ -1319,12 +1323,25 @@ font-weight: 400;
   padding: 0.5rem;
   gap: 1rem;
 }
-  
+
+.btn-register:hover{
+ background-color: var(--azul);
+
+}
+
+.btn-register:hover a,
+.btn-register:hover i{
+  color: var(--white);
+ 
+ }
+ 
 
   .btn-register i{
     font-size: 1.5rem;
     color: var(--azul);
   }
+
+ 
 
 
 
@@ -1390,5 +1407,16 @@ font-weight: 400;
       color: var(--white);
     }
 
+    .btn-login:hover{
+      background-color: var(--white);
+      border: none;
+     
+     }
 
-    }
+    .btn-login:hover a,
+    .btn-login:hover i{
+      color: var(--azul);
+     
+     }
+  
+  
