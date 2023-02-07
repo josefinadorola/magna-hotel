@@ -396,6 +396,9 @@ padding-top: 1rem;
   font-size: 1rem;
   text-align: center;
   color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   }
 
