@@ -566,6 +566,15 @@ padding: 0;
     padding: 0;
   }
 
+  .icons-big{
+  display: none;
+}
+
+  .register{
+    gap: 1rem;
+    padding: 1rem;
+  }
+
   .login a,
   .register a{
     font-size: 0.8rem;
@@ -574,15 +583,5 @@ padding: 0;
   .btn-login{
     width: 300px;
     }
-
-    .body-user{
-      background-image: none;
-     }
-  
-     .container-user{
-      box-shadow: none;
-      width: 100%;
-          }
-  
 
 }
