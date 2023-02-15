@@ -31,7 +31,7 @@
 .toggle-label{
 order: 2;
 position: absolute;
-right: 60px;
+right: 100px;
 }  
  
 #toggle-menu:checked ~ .navbar__list{
@@ -357,6 +357,11 @@ right: 60px;
     width: 55%;
   }
 
+  .toggle-label{
+     right: 60px;
+    }
+
+ 
   /*INDEX*/
 
 #hero{
