@@ -31,7 +31,7 @@
 .toggle-label{
 order: 2;
 position: absolute;
-right: 100px;
+right: 60px;
 }  
  
 #toggle-menu:checked ~ .navbar__list{
@@ -570,7 +570,8 @@ padding: 0;
   display: none;
 }
 
-  .register{
+  .register,
+  .login{
     gap: 1rem;
     padding: 1rem;
   }
