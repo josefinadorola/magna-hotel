@@ -5,10 +5,6 @@
     display: block;
   }
 
-  .navbar__list {
-    display: flex;
-    justify-content: right;
-  }
 
   .navbar__list {
     background-color: var(--white);
@@ -29,7 +25,7 @@
   .toggle-label {
     order: 2;
     position: absolute;
-    right: 100px;
+    right: 6rem;
   }
 
   #toggle-menu:checked ~ .navbar__list {
@@ -319,12 +315,8 @@
     height: 80px;
   }
 
-  .navbar__user {
-    width: 55%;
-  }
-
   .toggle-label {
-    right: 60px;
+    right: 4rem;
   }
 
   /*INDEX*/
