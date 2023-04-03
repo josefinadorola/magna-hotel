@@ -290,19 +290,15 @@
   }
 
   /*registro/login*/
-  .register {
-    gap: 2rem;
+  .register,
+  .login{
+    padding: 1rem;
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .login {
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 @media only screen and (max-device-width: 576px) {
@@ -317,6 +313,10 @@
 
   .toggle-label {
     right: 4rem;
+  }
+
+  .btn{
+    width: 243px;
   }
 
   /*INDEX*/
@@ -452,6 +452,7 @@
   .habitaciones {
     gap: 2rem;
     background-color: var(--crema);
+    align-items: center;
   }
 
   .habitaciones__descripcion {
@@ -479,7 +480,7 @@
 
   .form-reservas-room .btn,
   .btn-reserva {
-    width: 100%;
+    width: 250px;
   }
 
   /*Formulario reserva hotel*/
@@ -495,7 +496,7 @@
   .form-reservas-room input:nth-child(2),
   .form-reservas-room input:nth-child(4),
   .form-reservas-room select {
-    width: 310px;
+    width: 250px;
     height: 50px;
     padding: 1rem;
   }
@@ -514,6 +515,10 @@
 
   .icons-big {
     display: none;
+  }
+
+  .btn-user{
+    width: 300px;
   }
 
   .register,
