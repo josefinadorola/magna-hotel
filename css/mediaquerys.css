@@ -397,12 +397,13 @@
 
   .premios__container {
     padding: 0.5rem;
-    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
   }
 
   .premios__container img {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
   }
 
   .footer_container_dire {
