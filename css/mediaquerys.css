@@ -316,7 +316,7 @@
   }
 
   .btn{
-    width: 243px;
+    width: 250px;
   }
 
   /*INDEX*/
@@ -488,6 +488,7 @@
 
   .form-reservas-room {
     flex-direction: column;
+    align-content: center ;
   }
 
   .form-reservas-room span {
