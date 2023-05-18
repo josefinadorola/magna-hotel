@@ -7,7 +7,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  scroll-behavior: smooth;
 }
 
 :root {
@@ -17,6 +16,10 @@
   --azul: #17466b;
   --gray: #8a8787;
   --crema: #e9e9e2;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .section {
@@ -166,7 +169,7 @@ p {
 
 .icons {
   color: var(--brown);
-  font-size: 1.5rem;
+  width: 22px;
   margin-right: 1rem;
 }
 
