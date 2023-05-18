@@ -5,7 +5,6 @@
     display: block;
   }
 
-
   .navbar__list {
     background-color: var(--white);
     width: 50%;
@@ -291,14 +290,13 @@
 
   /*registro/login*/
   .register,
-  .login{
+  .login {
     padding: 1rem;
     gap: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
 }
 
 @media only screen and (max-device-width: 576px) {
@@ -307,16 +305,20 @@
   }
 
   .header__logo {
-    width: 150px;
-    height: 80px;
+    width: 130px;
+    height: 70px;
+  }
+
+  .header i {
+    font-size: 1.5rem;
   }
 
   .toggle-label {
-    right: 4rem;
+    right: 3.5rem;
   }
 
-  .btn{
-    width: 250px;
+  .btn {
+    width: 200px;
   }
 
   /*INDEX*/
@@ -406,10 +408,7 @@
     height: 150px;
   }
 
-  .footer_container_dire {
-    font-size: 1rem;
-  }
-
+  .footer_container_dire,
   .footer_container_tel {
     font-size: 0.8rem;
   }
@@ -423,14 +422,22 @@
 
   h1.h1-restaurante,
   h1.h1-hotel {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .intro-resto__container__datos {
+    padding: 2.5rem;
   }
 
   .intro-resto__container__datos h2,
   .intro-hotel__container__datos h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: 0.6rem;
     line-height: 2.5rem;
+  }
+
+  .intro-resto__container__datos .btn {
+    width: 200px;
   }
 
   .intro-resto__container,
@@ -438,10 +445,18 @@
     padding: 0;
   }
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
   /*Formulario reservas restaurante*/
   .resto-reservas {
     padding: 2rem;
     height: 480px;
+  }
+
+  .resto-reservas input {
+    width: 230px;
   }
 
   /*Habitaciones descripcion*/
@@ -481,14 +496,14 @@
 
   .form-reservas-room .btn,
   .btn-reserva {
-    width: 250px;
+    width: 200px;
   }
 
   /*Formulario reserva hotel*/
 
   .form-reservas-room {
     flex-direction: column;
-    align-content: center ;
+    align-content: center;
   }
 
   .form-reservas-room span {
@@ -498,13 +513,15 @@
   .form-reservas-room input:nth-child(2),
   .form-reservas-room input:nth-child(4),
   .form-reservas-room select {
-    width: 250px;
+    width: 230px;
     height: 50px;
     padding: 1rem;
   }
 
-  .servicios__container ul li {
+  .servicios__container ul li,
+  .horarios__container ul li {
     padding: 0.8rem 0;
+    font-size: 0.9rem;
   }
 
   /*registro/login*/
@@ -519,7 +536,7 @@
     display: none;
   }
 
-  .btn-user{
+  .btn-user {
     width: 300px;
   }
 
