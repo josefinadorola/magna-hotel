@@ -616,7 +616,7 @@ p {
   grid-template-columns: 350px 300px 150px 350px;
   grid-auto-rows: 1fr;
   height: 100vh;
-  padding: 2rem;
+  padding: 1rem;
   place-content: center; /*justify-content y align-content*/
 }
 
