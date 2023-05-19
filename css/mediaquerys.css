@@ -307,7 +307,7 @@
   }
 
   .btn {
-    width: 200px;
+    width: 220px;
   }
 
   /*INDEX*/
@@ -537,7 +537,8 @@
     font-size: 0.8rem;
     padding: 0.8rem 0;
   }
-  .btn-login {
+  .btn-login,
+  .btn-register {
     width: 300px;
   }
 }
