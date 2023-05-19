@@ -1,7 +1,7 @@
 @media only screen and (max-device-width: 1300px) {
   /*Navbar*/
 
-  .toggle-label i {
+  .toggle-label {
     display: block;
   }
 
@@ -36,10 +36,7 @@
 
   #nosotros,
   #food,
-  #hotel {
-    padding: 0.5rem;
-  }
-
+  #hotel,
   #contacto {
     padding: 0.5rem;
   }
@@ -97,8 +94,8 @@
 
   .nosotros__datos img,
   .food__container__datos img {
-    width: 340px;
-    height: 240px;
+    width: 310px;
+    height: 200px;
   }
   /*FIN INDEX*/
 
@@ -161,10 +158,6 @@
 }
 
 @media only screen and (max-device-width: 768px) {
-  .navbar__user {
-    width: 50%;
-  }
-
   #hero {
     height: 600px;
   }
@@ -309,21 +302,12 @@
     height: 70px;
   }
 
-  .header i {
-    font-size: 1.5rem;
-  }
-
   .toggle-label {
     right: 3.5rem;
   }
 
   .btn {
     width: 200px;
-  }
-
-  .icons {
-    width: 22px;
-    
   }
 
   /*INDEX*/
@@ -357,7 +341,6 @@
   .nosotros__container,
   .hotel__container,
   .food__container {
-    padding: 2rem;
     gap: 1rem;
   }
 
@@ -385,7 +368,6 @@
 
   .food__container__datos__p .btn,
   .hotel__hab__cont .btn {
-    padding: 0.8rem;
     width: 100%;
   }
 
@@ -403,7 +385,6 @@
   }
 
   .premios__container {
-    padding: 0.5rem;
     flex-direction: column;
     align-content: center;
   }
@@ -415,7 +396,7 @@
 
   .footer_container_dire,
   .footer_container_tel {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   /*---------*/
