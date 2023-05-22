@@ -19,6 +19,7 @@
     border: 3px solid var(--brown);
     transform: translateX(200%);
     transition: all 0.8s ease-out;
+   
   }
 
   .toggle-label {
