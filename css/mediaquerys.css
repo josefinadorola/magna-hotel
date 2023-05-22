@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 1300px) {
+@media (max-width: 1300px) {
   /*Navbar*/
 
   .toggle-label {
@@ -78,7 +78,7 @@
   }
 }
 
-@media only screen and (max-device-width: 992px) {
+@media (max-width: 992px) {
   /*INDEX*/
 
   .nosotros__datos {
@@ -157,7 +157,7 @@
   }
 }
 
-@media only screen and (max-device-width: 768px) {
+@media (max-width: 768px) {
   #hero {
     height: 600px;
   }
@@ -292,7 +292,7 @@
   }
 }
 
-@media only screen and (max-device-width: 576px) {
+@media (max-width: 576px) {
   .header {
     padding: 1rem;
   }
