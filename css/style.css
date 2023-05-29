@@ -7,6 +7,8 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  scroll-padding-top: 9rem;
+  transform: 0.2 linear;
 }
 
 :root {
